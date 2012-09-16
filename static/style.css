@@ -1,0 +1,44 @@
+body {
+    background: #FFF;
+    color: #1F1919;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {
+    color: #A6AEBB;
+    text-decoration: none;
+}
+
+.ur {
+    display: block;
+    margin: 75px auto 0px auto;
+    width: 500px;
+    text-align: center;
+}
+
+.title {
+    margin: 10px auto 10px auto;
+    width: 500px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.content {
+    margin: 10px auto 0px auto;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+}
