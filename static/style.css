@@ -11,22 +11,23 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #606D80;
+}
+
 .ur {
     display: block;
-    margin: 75px auto 0px auto;
-    width: 500px;
     text-align: center;
 }
 
 .title {
-    margin: 10px auto 10px auto;
-    width: 500px;
     font-size: 36px;
     text-align: center;
+    margin: 0px auto 10px auto;
 }
 
 .content {
-    margin: 10px auto 0px auto;
+    margin: 75px auto 0px auto;
     width: 500px;
     height: 100%;
     text-align: center;
@@ -41,4 +42,20 @@ a {
 .nav a {
     display: inline-block;
     padding: 10px;
+}
+
+.project {
+    display: block; 
+    text-align: left;
+    padding: 10px;
+}
+
+.project:hover {
+    border-bottom: 3px solid #606D80;
+    color: #A6AEBB;
+}
+
+.project_title {
+    color: #1F1919;
+    font-size: 22px;
 }
