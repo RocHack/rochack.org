@@ -1,42 +1,19 @@
-body {
-    background: #FFF;
-    color: #1F1919;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-}
-
-a {
+a, a:visited {
     color: #A6AEBB;
     text-decoration: none;
 }
 
 a:hover {
-    color: #606D80;
+    color: #000;
 }
 
-.ur {
-    display: block;
+.logo {
     text-align: center;
-}
-
-.title {
-    font-size: 36px;
-    text-align: center;
-    margin: 0px auto 10px auto;
-}
-
-.content {
-    margin: 75px auto 0px auto;
-    width: 500px;
-    height: 100%;
-    text-align: center;
+    margin-top: 50px;
 }
 
 .nav {
-    position: fixed;
-    top: 0px;
-    right: 10px;
+    text-align: right;
 }
 
 .nav a {
@@ -44,18 +21,8 @@ a:hover {
     padding: 10px;
 }
 
-.project {
-    display: block; 
-    text-align: left;
-    padding: 10px;
-}
-
-.project:hover {
-    border-bottom: 3px solid #606D80;
-    color: #A6AEBB;
-}
-
-.project_title {
-    color: #1F1919;
-    font-size: 22px;
+.content {
+    text-align: center;
+    font-size: 18px;
+    margin: 15px auto 0px auto;
 }
