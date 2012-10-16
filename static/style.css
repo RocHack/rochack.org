@@ -1,3 +1,10 @@
+h1.page_title {
+    font-family: Helvetica-Neue, Helvetica, Ariel, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+}
+
 a, a:visited {
     color: #A6AEBB;
     text-decoration: none;
@@ -25,4 +32,20 @@ a:hover {
     text-align: center;
     font-size: 18px;
     margin: 15px auto 0px auto;
+}
+
+.project_title {
+    color: #1F1919;
+    font-size: 22px;
+}
+
+.project {
+    display: block; 
+    text-align: left;
+    padding: 10px;
+}
+
+.project:hover {
+    border-bottom: 3px solid #606D80;
+    color: #A6AEBB;
 }
