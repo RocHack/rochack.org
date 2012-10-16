@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RocHack - Home</title>
-        <link rel="stylesheet" type="text/css" href="static/style.css" />
-    </head>
-    <body>
-        <div class="nav">
-            <a href=".">Home</a>
+<head>
+	<title>RocHack</title>
+	<meta charset="utf-8">
+	<meta name="description" content="We are a group of programmers, hackers, and entrepreneurs attending the University of Rochester">
+	<meta name="author" content="RocHack">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./static/base.css">
+	<link rel="stylesheet" href="./static/skeleton.css">
+	<link rel="stylesheet" href="./static/layout.css">
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav sixteen columns">
             <a href="projects.html">Projects</a>
             <a href="https://github.com/RocHack">Github</a>
             <a href="https://groups.google.com/forum/?fromgroups#!forum/rochack">Mailing List</a>
             <a href="irc://irc.freenode.com/##RocHack">IRC</a>
         </div>
-        <div class="content">
-            {{content}}
-        </div>
-        <script type="text/javascript">
+        {{content}}
+	</div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35584323-1']);
+        _gaq.push(['_trackPageview']);
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-35584323-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
-    </body>
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
 </html>
