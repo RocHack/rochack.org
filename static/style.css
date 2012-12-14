@@ -47,5 +47,6 @@ a:hover {
 
 .project:hover {
     border-bottom: 3px solid #606D80;
+	padding-bottom: 7px;
     color: #A6AEBB;
 }
