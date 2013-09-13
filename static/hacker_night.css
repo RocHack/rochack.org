@@ -1,54 +1,68 @@
 body {
-    background: #212121;
-    color: #EFF3F4;
+    background: #EFF3F4;
+    color: #363636;
     font-family: 'Ubuntu', sans-serif;
     margin: 0px;
     padding: 0px;
-
-    min-width: 960px;
-    background: url("/static/hn_bg.jpeg") no-repeat;
-    background-size: cover;
+    font-size: 16px;
 }
 
-.image {
-    background: url("/static/hn_bg.jpeg") no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+a {
+    color: #00A1CB;
+    text-decoration: none;
+}
+
+b {
+    font-weight: bold;
+    color: #E54028;
+}
+
+.container {
+    width: 450px;
+    margin: 0px auto 0px auto;
 }
 
 .title {
-    text-shadow: 0px 0px 5px #212121;
-    font-size: 78px;
-    
-    text-align: left;
-    position: fixed;
-    top: 15;
-    left: 25px;
-}
-
-.subtitle {
-    text-shadow: 0px 0px 5px #212121;
-    font-size: 24px;
-    
-    text-align: left;
-    position: fixed;
-    top: 85px;
-    left: 33px;
-}
-
-.info {
+    font-size: 72px;
     text-align: center;
-    font-size: 32px;
-    width: 400px;
-    text-shadow: 0px 0px 5px #212121;
-    line-height: 1.2em;
+    padding: 10px;
+    color: #E54028;
+}
 
-    position: fixed;
-    left: 50%;
-    margin-left: -200px;
-    bottom: 100px;
+.tagline {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0px 20px 0px;
+}
+
+.stripe {
+    height: 1px;
+}
+
+.stripe.gray {
+    background: #616161;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 20px 0px 5px 0px;
+    padding: 0px;
+}
+
+h1:nth-child(n+1) {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 10px 0px 10px 0px;
+    line-height: 1.4em;
+}
+
+.footer {
+    width: 450px;
+    margin: 0px auto 0px auto;
+    font-size: 14px;
+    margin-top: 20px;
 }
