@@ -1,0 +1,54 @@
+body {
+    background: #212121;
+    color: #EFF3F4;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+    min-width: 960px;
+    background: url("/static/hn_bg.jpeg") no-repeat;
+    background-size: cover;
+}
+
+.image {
+    background: url("/static/hn_bg.jpeg") no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.title {
+    text-shadow: 0px 0px 5px #212121;
+    font-size: 78px;
+    
+    text-align: left;
+    position: fixed;
+    top: 15;
+    left: 25px;
+}
+
+.subtitle {
+    text-shadow: 0px 0px 5px #212121;
+    font-size: 24px;
+    
+    text-align: left;
+    position: fixed;
+    top: 85px;
+    left: 33px;
+}
+
+.info {
+    text-align: center;
+    font-size: 32px;
+    width: 400px;
+    text-shadow: 0px 0px 5px #212121;
+    line-height: 1.2em;
+
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 100px;
+}
