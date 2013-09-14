@@ -35,6 +35,15 @@ b {
     padding: 5px 0px 20px 0px;
 }
 
+.date {
+   /*color: #808080; */
+    /*color: #00A1CB;*/
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .stripe {
     height: 1px;
 }
@@ -47,6 +56,7 @@ h1 {
     font-size: 32px;
     margin: 20px 0px 5px 0px;
     padding: 0px;
+    font-weight: normal;
 }
 
 h1:nth-child(n+1) {
