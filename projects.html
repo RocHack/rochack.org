@@ -1,22 +1,31 @@
 ---
 layout: default
+
+projects:
+    -
+        title: Rocbuses
+        link: rocbuses/
+        description: Making UR's shuttle schedules more accessible.
+    -
+        title: Cluster Graph
+        link: clustergraph/
+        description: Explore the UR curriculum.
+    -
+        title: Rochako
+        link: https://github.com/RocHack/rochako
+        description: "##rochack's very own intelligent life form."
+    -
+        title: bb
+        link: https://github.com/RocHack/bb
+        description: A command line client for Blackboard.
+
 ---
 <div class="projects eight columns offset-by-four">
     <h1 class="page_title">Projects</h1>
-    <a href="rocbuses/" class="project">
-        <div class="project_title">Rocbuses</div>
-        Making UR's shuttle schedules more accessible.
+    {% for project in page.projects %}
+    <a href="{{ project.link }}" class="project">
+        <div class="project_title">{{ project.title }}</div>
+        {{ project.description }}
     </a>
-	<a href="clustergraph/" class="project">
-		<div class="project_title">Cluster Graph</div>
-		Explore the UR curriculum.
-	</a>
-	<a href="https://github.com/RocHack/rochako" class="project">
-		<div class="project_title">Rochako</div>
-		##rochack's very own intelligent life form.
-	</a>
-	<a href="https://github.com/RocHack/bb" class="project">
-		<div class="project_title">bb</div>
-        A command line client for Blackboard.
-	</a>
+    {% endfor %}
 </div>
