@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="greeting">
+    RocHack is a group of hackers, engineers, entrepreneurs, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
+</div>
+<h2>Latest news</h2>
+{% for post in site.posts %}
+<div class="post">
+    <div class="post_title">{{ post.title }}</div>
+    <div class="post_meta">Posted by {{ post.author }} on {{post.date | date: "%B %d, %Y" }}</div>
+    <div class="post_content">{{ post.content }}</div>
+</div>
+{% endfor %}
