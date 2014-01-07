@@ -3,12 +3,26 @@
     <head>
         <title>RocHack</title>
         <link rel="stylesheet" type="text/css" href="static/style.css" />
+
         {% if page.url != "/index.html" %}
         <link rel="stylesheet" type="text/css" href="static/small_header.css" />
         {% endif %}
+        {% if page.url == "/index.html" %}
+        <link rel="stylesheet" type="text/css" href="static/index.css" />
+        {% endif %}
+
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
+
+    {% if page.url == "/index.html" %}
+    <div class="cover">
+        <div class="greeting">
+        RocHack is a group of hackers, engineers, entrepreneurs, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
+        </div>
+    </div>
+    {% endif %}
+
     <div class="container">
         <div class="top">
             <a class="title" href="/">RocHack</a>
