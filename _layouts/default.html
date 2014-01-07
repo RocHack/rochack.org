@@ -16,7 +16,11 @@
     <body>
 
     {% if page.url == "/index.html" %}
+    <div class="container">
+        {% include nav.html %}
+    </div>
     <div class="cover">
+        <a class="title" href="/">RocHack</a>
         <div class="greeting">
         RocHack is a group of hackers, engineers, entrepreneurs, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
         </div>
@@ -24,17 +28,16 @@
     {% endif %}
 
     <div class="container">
+        {% if page.url != "/index.html" %}
         <div class="top">
             <a class="title" href="/">RocHack</a>
         </div>
-        <table class="nav">
-        <tr>
-            <td class="border_red{% if page.url == '/index.html' %} selected{% endif %}"><a href="/">Home</a></td>
-            <td class="border_yellow{% if page.url == '/projects.html' %} selected{% endif %}"><a href="/projects.html">Projects</a></td>
-            <td class="border_green{% if page.url == '/hacker_night.html' %} selected{% endif %}"><a href="/hacker_night.html">Hacker Night</a></td>
-            <td class="border_blue{% if page.url == '/about.html' %} selected{% endif %}"><a href="/about.html">About</a></td>
-        </tr>
-        </table>
+        {% endif %}
+
+        {% if page.url != "/index.html" %}
+        {% include nav.html %}
+        {% endif %}
+
         <div class="content">
             {{content}}
         </div>
