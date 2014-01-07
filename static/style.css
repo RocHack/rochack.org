@@ -111,6 +111,18 @@ a.title {
     width: 300px;
 }
 
+.members {
+    margin: 0px;
+}
+
+.members li {
+    margin: 5px 0px;
+}
+
+.members a {
+    font-weight: 700;
+}
+
 /*
  * Posts
  */
