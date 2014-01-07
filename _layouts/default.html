@@ -3,7 +3,10 @@
     <head>
         <title>RocHack</title>
         <link rel="stylesheet" type="text/css" href="static/style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        {% if page.url != "/index.html" %}
+        <link rel="stylesheet" type="text/css" href="static/small_header.css" />
+        {% endif %}
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
     <div class="container">
@@ -12,14 +15,18 @@
         </div>
         <table class="nav">
         <tr>
-            <td class="border_red selected"><a href="/">Home</a></td>
-            <td class="border_yellow"><a href="/projects.html">Projects</a></td>
-            <td class="border_green"><a href="/hacker_night.html">Hacker Night</a></td>
-            <td class="border_blue"><a href="/about.html">About</a></td>
+            <td class="border_red{% if page.url == '/index.html' %} selected{% endif %}"><a href="/">Home</a></td>
+            <td class="border_yellow{% if page.url == '/projects.html' %} selected{% endif %}"><a href="/projects.html">Projects</a></td>
+            <td class="border_green{% if page.url == '/hacker_night.html' %} selected{% endif %}"><a href="/hacker_night.html">Hacker Night</a></td>
+            <td class="border_blue{% if page.url == '/about.html' %} selected{% endif %}"><a href="/about.html">About</a></td>
         </tr>
         </table>
         <div class="content">
             {{content}}
+        </div>
+
+        <div class="footer">
+            Made in Rochester, NY. All source available on <a href="https://github.com/RocHack/rochack.github.io">GitHub</a>.
         </div>
     </div>
     </body>

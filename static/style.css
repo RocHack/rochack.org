@@ -16,8 +16,12 @@ a {
 }
 
 p {
-    margin: 5px 0px;
+    margin: 10px 0px;
     line-height: 1.4em;
+}
+
+p.indent {
+    text-indent: 20px;
 }
 
 h1 {
@@ -62,6 +66,10 @@ a.title {
     border-bottom: 3px solid #000;
 }
 
+.nav td.selected a {
+    font-weight: 700;
+}
+
 /*
  * Navbar colors
  */
@@ -95,6 +103,14 @@ a.title {
     padding: 10px;
 }
 
+.footer {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #878787;
+    width: 300px;
+}
+
 /*
  * Posts
  */
@@ -123,4 +139,38 @@ a.title {
 .project_title {
     display: block;
     font-size: 24px;
+}
+
+/*
+ * Hacker night customs
+ */
+h1.hn_title {
+    color: #E54028;
+    text-align: center;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hn_tagline {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.hn_date {
+    text-align: center;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+}
+
+hr {
+    border: 0px none;
+    border-bottom: 1px solid #CCC;
+    padding: 0px;
+    display: block;
+    margin: 20px 0px;
 }
