@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RocHack</title>
+        <title>RocHack{% if page.title %} - {{ page.title }} {% endif %}</title>
         <link rel="stylesheet" type="text/css" href="static/style.css" />
 
         {% if page.url == "/index.html" %}
