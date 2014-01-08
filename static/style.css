@@ -41,12 +41,6 @@ h2 {
 /*
  * Top/nav bar
  */
-a.title {
-    display: block;
-    font-size: 18px;
-    font-weight: 400;
-}
-
 .nav {
     margin: 0px auto -3px auto;
     text-align: center;
@@ -117,7 +111,7 @@ a.title {
     text-align: center;
     font-size: 14px;
     color: #878787;
-    width: 300px;
+    width: 275px;
 }
 
 .members {

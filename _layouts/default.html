@@ -12,8 +12,9 @@
     </head>
     <body>
 
-    {% if page.url == "/index.html" %}
     {% include nav.html %}
+
+    {% if page.url == "/index.html" %}
     <div class="cover">
         <a class="title" href="/">RocHack</a>
         <div class="greeting">
@@ -22,12 +23,7 @@
     </div>
     {% endif %}
 
-    {% if page.url != "/index.html" %}
-        {% include nav.html %}
-    {% endif %}
-
     <div class="container">
-
         <div class="content">
             {{content}}
         </div>
