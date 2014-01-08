@@ -13,9 +13,7 @@
     <body>
 
     {% if page.url == "/index.html" %}
-    <div class="nav_bar">
-        {% include nav.html %}
-    </div>
+    {% include nav.html %}
     <div class="cover">
         <a class="title" href="/">RocHack</a>
         <div class="greeting">
@@ -25,9 +23,7 @@
     {% endif %}
 
     {% if page.url != "/index.html" %}
-    <div class="nav_bar">
-    {% include nav.html %}
-    </div>
+        {% include nav.html %}
     {% endif %}
 
     <div class="container">

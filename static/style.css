@@ -55,6 +55,7 @@ a.title {
 }
 
 .nav_bar {
+    background: #F9F9F9;
     border-bottom: 3px solid #CCC;
     margin: 0px 0px 10px 0px;
     height: 44px;
@@ -62,8 +63,7 @@ a.title {
 
 .nav_title {
     display: block;
-    position: absolute;
-    left: 15px;
+    float: left;
     font-weight: 400;
     font-size: 24px;
     line-height: 47px;
@@ -108,7 +108,7 @@ a.title {
  * Body stuff
  */
 .container {
-    width: 500px;
+    width: 800px;
     margin: 0px auto 0px auto;
 }
 
