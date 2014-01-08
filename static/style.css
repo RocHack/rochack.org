@@ -73,6 +73,7 @@ h2 {
 
 .nav td {
     border-bottom: 3px solid #000;
+    width: 150px;
 }
 
 .nav td.selected a {
