@@ -41,21 +41,26 @@ h2 {
 /*
  * Top/nav bar
  */
-.top {
-    text-align: center;
-}
-
-a.title {
-    display: block;
-    font-size: 48px;
-    font-weight: 400;
-}
-
 .nav {
-    margin: 10px auto;
+    margin: 0px auto -3px auto;
     text-align: center;
     border-spacing: 0px 0px;
-    width: 100%;
+    float: right;
+}
+
+.nav_bar {
+    background: #F9F9F9;
+    border-bottom: 3px solid #CCC;
+    margin: 0px 0px 10px 0px;
+    height: 44px;
+}
+
+.nav_title {
+    display: block;
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 47px;
 }
 
 .nav td a {
@@ -97,7 +102,7 @@ a.title {
  * Body stuff
  */
 .container {
-    width: 500px;
+    width: 800px;
     margin: 0px auto 0px auto;
 }
 
@@ -106,7 +111,7 @@ a.title {
     text-align: center;
     font-size: 14px;
     color: #878787;
-    width: 300px;
+    width: 275px;
 }
 
 .members {
