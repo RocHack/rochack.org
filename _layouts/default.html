@@ -4,9 +4,6 @@
         <title>RocHack</title>
         <link rel="stylesheet" type="text/css" href="static/style.css" />
 
-        {% if page.url != "/index.html" %}
-        <link rel="stylesheet" type="text/css" href="static/small_header.css" />
-        {% endif %}
         {% if page.url == "/index.html" %}
         <link rel="stylesheet" type="text/css" href="static/index.css" />
         {% endif %}
@@ -16,7 +13,7 @@
     <body>
 
     {% if page.url == "/index.html" %}
-    <div class="container">
+    <div class="nav_bar">
         {% include nav.html %}
     </div>
     <div class="cover">
@@ -27,16 +24,13 @@
     </div>
     {% endif %}
 
-    <div class="container">
-        {% if page.url != "/index.html" %}
-        <div class="top">
-            <a class="title" href="/">RocHack</a>
-        </div>
-        {% endif %}
+    {% if page.url != "/index.html" %}
+    <div class="nav_bar">
+    {% include nav.html %}
+    </div>
+    {% endif %}
 
-        {% if page.url != "/index.html" %}
-        {% include nav.html %}
-        {% endif %}
+    <div class="container">
 
         <div class="content">
             {{content}}

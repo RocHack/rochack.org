@@ -41,21 +41,32 @@ h2 {
 /*
  * Top/nav bar
  */
-.top {
-    text-align: center;
-}
-
 a.title {
     display: block;
-    font-size: 48px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .nav {
-    margin: 10px auto;
+    margin: 0px auto -3px auto;
     text-align: center;
     border-spacing: 0px 0px;
-    width: 100%;
+    float: right;
+}
+
+.nav_bar {
+    border-bottom: 3px solid #CCC;
+    margin: 0px 0px 10px 0px;
+    height: 44px;
+}
+
+.nav_title {
+    display: block;
+    position: absolute;
+    left: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 47px;
 }
 
 .nav td a {
