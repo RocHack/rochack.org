@@ -2,7 +2,7 @@
 layout: post
 author: Steve Gattuso
 title: Welcome to the new RocHack
-date: 2013-12-08
+date: 2014-01-08
 ---
 ![...fresh..](http://us.rusty.com/us/blog/wp-content/uploads/2012/01/FRESHPRINCE.jpg)
 
