@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>RocHack</title>
-	<meta charset="utf-8">
-	<meta name="description" content="We are a group of programmers, hackers, and entrepreneurs attending the University of Rochester">
-	<meta name="author" content="RocHack">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="./static/base.css">
-	<link rel="stylesheet" href="./static/skeleton.css">
-	<link rel="stylesheet" href="./static/layout.css">
-    <link rel="stylesheet" href="./static/style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="nav sixteen columns">
-            <a href="projects.html">Projects</a>
-            <a href="hacker_night.html">Hacker Night</a>
-            <a href="https://github.com/RocHack">Github</a>
-            <a href="https://groups.google.com/forum/?fromgroups#!forum/rochack">Mailing List</a>
-            <a href="irc://irc.freenode.com/##RocHack">IRC</a>
+    <head>
+        <title>RocHack{% if page.title %} - {{ page.title }} {% endif %}</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css" />
+
+        {% if page.url == "/index.html" %}
+        <link rel="stylesheet" type="text/css" href="static/index.css" />
+        {% endif %}
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+    {% include nav.html %}
+
+    {% if page.url == "/index.html" %}
+    <div class="cover">
+        <a class="title" href="/">RocHack</a>
+        <div class="greeting">
+        RocHack is a group of hackers, engineers, entrepreneurs, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
         </div>
+    </div>
+    {% endif %}
+
+    <div class="container{% if page.width == 'narrow' %} narrow{% endif %}">
         {{content}}
-	</div>
+
+        <div class="footer">
+            Made in Rochester, NY. All source available on <a href="https://github.com/RocHack/rochack.github.io">GitHub</a>.
+        </div>
+    </div>
+
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-35584323-1']);
@@ -33,5 +42,5 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-</body>
+    </body>
 </html>

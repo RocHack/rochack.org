@@ -1,0 +1,77 @@
+---
+layout: default
+width: narrow
+title: About
+
+members:
+
+    2013:
+    -
+        name: Simon Weber
+        link: http://www.simonmweber.com
+    -
+        name: Andrew D. Wong
+        link: https://andrewdwong.com
+    -
+        name: Sean Brennan
+
+    2014:
+    -
+        name: Nate Book
+
+    2015:
+    -
+        name: Charles Lehner
+        link: https://celehner.com
+    -
+        name: Ryan Puffer
+        link: http://www.ryanpuffer.com
+
+    2016:
+    -
+        name: Steve Gattuso
+        link: http://stevegattuso.me
+    -
+        name: Bram Adams
+    -
+        name: John Donner
+
+    2017:
+    -
+        name: Jack Valinsky
+        link: https://github.com/eigengrau80
+    -
+        name: Casey Waldren
+        link: https://github.com/cwaldren
+    -
+        name: Hassler Thurston
+        link: http://hasslerthurston.com
+
+---
+<h1>About RocHack</h1>
+<p class="indent">
+RocHack started with a Facebook thread about posting GitHub profiles. Shortly
+after, <a href="http://www.simonmweber.com">Simon Weber</a>, <a href="#">Sean Brennan</a>, <a
+href="https://andrewdwong.com">Andrew Wong</a>, <a href="#">Nate Book</a>, <a href="http://celehner.com/">Charles Lehner</a>, and <a href="#">Steve Gattuso</a> met up in person for the very first RocHack meeting (which ended up being all of them sitting in a room ranting about technology) in September of 2012.
+</p>
+
+<p class="indent">
+Since then, RocHack has grown and had events such as Hacker Nights and our first Hackathon in December 2013.
+</p>
+
+<h2>Get in touch</h2>
+<p class="indent">We love meeting new people! If you have any interest in RocHack or just want to say hello, feel free to email our <a href="https://groups.google.com/forum/?fromgroups#!forum/rochack">mailing list</a> or ping us in our IRC channel: <a href="irc://irc.freenode.com/##RocHack">##rochack on freenode</a>.
+
+<h2>The family</h2>
+<p class="indent">The one and only requirement to becoming a member of the RocHack family is that you must learn enough about Git and HTML to add your name to this list. </p>
+
+<p class="indent">Anyone who comes to us with no programming knowledge will be taught how to do this as their first project, as it's a super simple way to get started with the two tools.</p>
+
+{% for members in page.members %}
+<h3>Class of {{ members[0] }}</h3>
+<ul class="members">
+{% for member in members[1] %}
+<li><a href="{{ member.link }}">{{ member.name }}</a></li>
+{% endfor %}
+</ul>
+{% endfor %}

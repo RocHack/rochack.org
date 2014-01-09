@@ -1,52 +1,200 @@
-h1.page_title {
-    font-family: Helvetica-Neue, Helvetica, Ariel, sans-serif;
+/*
+ * General tags
+ */
+body {
+    background: #EEE;
+    color: #616161;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 600px;
+}
+
+a {
+    color: #E54028;
+    text-decoration: none;
     font-weight: 300;
+}
+
+p {
+    margin: 10px 0px;
+    line-height: 1.4em;
+}
+
+p.indent {
+    text-indent: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0px 0px 5px;
+}
+
+h2 {
+    font-size: 28px;
+    border-bottom: 1px solid #CCC;
+    padding: 5px 0px;
+}
+
+/*
+ * Top/nav bar
+ */
+.nav {
+    margin: 0px auto -3px auto;
     text-align: center;
+    border-spacing: 0px 0px;
+    float: right;
+}
+
+.nav_bar {
+    background: #F9F9F9;
+    border-bottom: 3px solid #CCC;
+    margin: 0px 0px 15px 0px;
+    height: 44px;
+}
+
+.nav_title {
+    display: block;
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 47px;
+}
+
+.nav td a {
+    display: block;
+    color: #616161;
+    padding: 10px 20px;
+    margin: 0px 0px;
+    font-size: 18px;
+}
+
+.nav td {
+    border-bottom: 3px solid #000;
+    width: 150px;
+}
+
+.nav td.selected a {
+    font-weight: 700;
+}
+
+/*
+ * Navbar colors
+ */
+.border_red {
+    border-color: #F18D05 !important;
+}
+
+.border_yellow {
+    border-color: #D0D102 !important;
+}
+
+.border_green {
+    border-color: #61AE24 !important;
+}
+
+.border_blue {
+    border-color: #00A1CB !important;
+}
+
+/*
+ * Body stuff
+ */
+.container {
+    width: 800px;
+    margin: 0px auto 0px auto;
+}
+
+.container.narrow {
+    width: 600px;
+}
+
+.container.narrow img {
+    max-width: 600px;
+}
+
+.footer {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #878787;
+    width: 275px;
+}
+
+.members {
+    margin: 0px;
+}
+
+.members li {
+    margin: 5px 0px;
+}
+
+.members a {
+    font-weight: 700;
+}
+
+/*
+ * Posts
+ */
+.post_title {
+    font-size: 24px;
+}
+
+.post_meta {
+    font-size: 14px;
+    font-style: italic;
+    margin: 5px 0px 10px 0px;
+}
+
+/*
+ * Projects
+ */
+.project_first {
     margin-top: 20px;
 }
 
-a, a:visited {
-    color: #A6AEBB;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-}
-
-.logo {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.nav {
-    text-align: right;
-}
-
-.nav a {
-    display: inline-block;
+.project {
+    background: #FFF;
     padding: 10px;
-}
-
-.content {
-    text-align: center;
-    font-size: 18px;
-    margin: 15px auto 0px auto;
 }
 
 .project_title {
-    color: #1F1919;
-    font-size: 22px;
+    display: block;
+    font-size: 24px;
 }
 
-.project {
-    display: block; 
-    text-align: left;
-    padding: 10px;
+/*
+ * Hacker night customs
+ */
+h1.hn_title {
+    color: #E54028;
+    text-align: center;
+    font-size: 48px;
+    text-align: center;
 }
 
-.project:hover {
-    border-bottom: 3px solid #606D80;
-	padding-bottom: 7px;
-    color: #A6AEBB;
+.hn_tagline {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.hn_date {
+    text-align: center;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+}
+
+hr {
+    border: 0px none;
+    border-bottom: 1px solid #CCC;
+    padding: 0px;
+    display: block;
+    margin: 20px 0px;
 }

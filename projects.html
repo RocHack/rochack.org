@@ -1,35 +1,19 @@
 ---
 layout: default
-
-projects:
-    -
-        title: Rocbuses
-        link: rocbuses/
-        description: Making UR's shuttle schedules more accessible.
-    -
-        title: Cluster Graph
-        link: clustergraph/
-        description: Explore the UR curriculum.
-    -
-        title: Rochako
-        link: https://github.com/RocHack/rochako
-        description: "##rochack's very own intelligent life form."
-    -
-        title: bb
-        link: https://github.com/RocHack/bb
-        description: A command line client for Blackboard.
-    -
-        title: Meal Plan Data Grapher
-        link: https://rochack.org/food/
-        description: Analyze your declining and Uros balance
-
+width: narrow
+title: Projects
 ---
-<div class="projects eight columns offset-by-four">
-    <h1 class="page_title">Projects</h1>
-    {% for project in page.projects %}
-    <a href="{{ project.link }}" class="project">
-        <div class="project_title">{{ project.title }}</div>
-        {{ project.description }}
-    </a>
-    {% endfor %}
+<h1>Projects</h1>
+<p>RocHack is a group all about creating. Here are some of the projects we've worked on over the years. To see the most recent work, check out our <a href="http://github.com/rochack">Github group</a>.</p>
+
+<div class="project project_first">
+    <a href="http://google.com" class="project_title">Grooveboat</a>
+    <p class="project_description">A peer-to-peer turntable.fm clone written in javascript using WebRTC.</p>
+    <div class="project_authors">By <a href="#">Charles Lehner</a> and <a href="#">Steve Gattuso</a></div>
+</div>
+
+<div class="project project_first">
+    <a href="https://github.com/bramses/URStudying" class="project_title">UR Studying</a>
+    <p class="project_description">Find and organize groups for studying.</p>
+    <div class="project_authors">By <a href="http://github.com/bramses">Bram Adams</a></div>
 </div>
