@@ -6,18 +6,18 @@ title: About
 members:
 
     2013:
-    -
+    - &simon
         name: Simon Weber
         link: http://www.simonmweber.com
-    -
+    - &wong
         name: Andrew D. Wong
         link: https://andrewdwong.com
-    -
+    - &sean
         name: Sean Brennan
         link: https://github.com/eyebraus
 
     2014:
-    -
+    - &nate
         name: Nate Book
         link: http://www.natembook.com
     -    
@@ -31,7 +31,7 @@ members:
         link: https://github.com/seonggbang
 
     2015:
-    -
+    - &cel
         name: Charles Lehner
         link: https://celehner.com
     -
@@ -39,7 +39,7 @@ members:
         link: http://www.ryanpuffer.com
 
     2016:
-    -
+    - &steve
         name: Steve Gattuso
         link: http://stevegattuso.me
     -
@@ -72,12 +72,17 @@ members:
     -
         name: Xinran Li
 
+founders: [*simon, *sean, *wong, *nate, *cel, *steve]
+
 ---
 <h1>About RocHack</h1>
 <p class="indent">
 RocHack started with a Facebook thread about posting GitHub profiles. Shortly
-after, <a href="http://www.simonmweber.com">Simon Weber</a>, <a href="#">Sean Brennan</a>, <a
-href="https://andrewdwong.com">Andrew Wong</a>, <a href="#">Nate Book</a>, <a href="http://celehner.com/">Charles Lehner</a>, and <a href="#">Steve Gattuso</a> met up in person for the very first RocHack meeting (which ended up being all of them sitting in a room ranting about technology) in September of 2012.
+after,
+{% for member in page.founders %}
+<a href="{{ member.link }}">{{ member.name }}</a>{% unless forloop.last %},
+{% endunless %}{% if forloop.rindex0 == 1 %}and{% endif %}{% endfor %}
+met up in person for the very first RocHack meeting (which ended up being all of them sitting in a room ranting about technology) in September of 2012.
 </p>
 
 <p class="indent">
