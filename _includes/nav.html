@@ -1,13 +1,32 @@
-<div class="nav_bar">
-    <div class="container">
-    <a href="/" class="nav_title">RocHack</a>
-    <table class="nav">
-    <tr>
-        <td class="border_red"><a href="https://github.com/rochack" target="_blank">Github</a></td>
-        <td class="border_yellow{% if page.url == '/projects.html' %} selected{% endif %}"><a href="/projects.html">Projects</a></td>
-        <td class="border_green{% if page.url == '/hacker_night.html' %} selected{% endif %}"><a href="/hacker_night.html">Hacker Night</a></td>
-        <td class="border_blue{% if page.url == '/about.html' %} selected{% endif %}"><a href="/about.html">About</a></td>
-    </tr>
-    </table>
+<div class="nav-bar">
+    <div class="large-nav container">
+        <a href="/" class="title four columns">RocHack</a>
+
+        <div class="desktop-links-container ten columns offset-by-two">
+        <table class="links">
+        <tr>
+            <td class="border-red"><a href="https://github.com/rochack" target="_blank">Github</a></td>
+            <td class="border-orange{% if page.url == '/hackathon.html' %} selected{% endif %}"><a href="/hackathon.html">Hackathon</a></td>
+            <td class="border-yellow{% if page.url == '/projects.html' %} selected{% endif %}"><a href="/projects.html">Projects</a></td>
+            <td class="border-green{% if page.url == '/hacker_night.html' %} selected{% endif %}"><a href="/hacker_night.html">Hacker Night</a></td>
+            <td class="border-blue{% if page.url == '/about.html' %} selected{% endif %}"><a href="/about.html">About</a></td>
+        </tr>
+        </table>
+        </div>
+    </div>
+
+    <div class="mobile-nav container">
+        <div class="four columns">
+            <a href="/" class="title">RocHack</a>
+            <a href="#" class="menu" id="menu"><img src="/static/bars.png" /></a>
+        </div>
+    </div>
+
+    <div class="mobile-links container" id="mobile-links">
+        <a class="mobile-link four columns" href="/">Home</a>
+        <a class="mobile-link four columns" href="/hackathon.html">Hackathon</a>
+        <a class="mobile-link four columns" href="/projects.html">Projects</a>
+        <a class="mobile-link four columns" href="/hacker_night.html">Hacker Night</a>
+        <a class="mobile-link four columns" href="/about.html">About</a>
     </div>
 </div>

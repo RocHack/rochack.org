@@ -3,11 +3,44 @@ layout: default
 width: narrow
 ---
 
-<h2>Latest news</h2>
-{% for post in site.posts %}
-<div class="post">
-    <div class="post_title">{{ post.title }}</div>
-    <div class="post_meta">Posted by {{ post.author }} on {{post.date | date: "%B %d, %Y" }}</div>
-    <div class="post_content">{{ post.content }}</div>
+<div class="cover index">
+    <div class="container no-expand">
+        <div class="greeting eight columns offset-by-four">
+            <h1>RocHack</h1>
+            <div class="about">
+                RocHack is a group of hackers, engineers, builders, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
+            </div>
+        </div>
+    </div>
 </div>
-{% endfor %}
+
+<div class="container">
+    <div class="five columns sidebox-container">
+        <div class="sidebox">
+            <h1>Get in touch</h1>
+            <p>You can find RocHack throughout the internets:</p>
+            <ul>
+                <li><a href="http://twitter.com/rochack">Twitter</a></li>
+                <li><a href="https://www.facebook.com/groups/rochack/">Facebook Group</a></li>
+                <li><a href="https://groups.google.com/forum/?fromgroups#!forum/rochack">Mailing list</a></li>
+                <li><a href="http://talk.rochack.org">Message board</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="four columns mobile-news-header">
+        <h1>Latest News</h1>
+    </div>
+    {% for post in site.posts %}
+    <div class="eleven columns">
+        <div class="post">
+        <h1>{{ post.title }}</h1>
+        <div class="post-meta">Posted by {{post.author}} on {{post.date | date: "%B %d, %Y" }}</div>
+        <div class="post-content">
+            {{ post.content }}
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>

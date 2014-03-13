@@ -2,32 +2,22 @@
 <html>
     <head>
         <title>RocHack{% if page.title %} - {{ page.title }} {% endif %}</title>
-        <link rel="stylesheet" type="text/css" href="static/style.css" />
-
-        {% if page.url == "/index.html" %}
-        <link rel="stylesheet" type="text/css" href="static/index.css" />
-        {% endif %}
-
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="static/rochack.css" />
+        <link rel="stylesheet" type="text/css" href="static/skeleton.css" />
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+        <script src="/static/rochack.js"></script>
     </head>
     <body>
 
     {% include nav.html %}
 
-    {% if page.url == "/index.html" %}
-    <div class="cover">
-        <a class="title" href="/">RocHack</a>
-        <div class="greeting">
-        RocHack is a group of hackers, engineers, builders, and friendly people who attend the <a href="http://rochester.edu">University of Rochester</a>. We love to build things that make people's lives better.
-        </div>
-    </div>
-    {% endif %}
+    {{ content }}
 
-    <div class="container{% if page.width == 'narrow' %} narrow{% endif %}">
-        {{content}}
-
-        <div class="footer">
-            Made in Rochester, NY. All source available on <a href="https://github.com/RocHack/rochack.github.io">GitHub</a>.
+    <div class="container">
+        <div class="six columns offset-by-five footer">
+            <p>Made in snowy Rochester, New York<br /> All source available on <a href="https://github.com/RocHack/rochack.github.io">Github</a></p>
         </div>
     </div>
 

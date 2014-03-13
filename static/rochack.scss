@@ -1,0 +1,469 @@
+/*
+ * Constants
+ */
+$white: #FFF;
+$light: #EEE;
+$dark: #616161;
+$gray: #CCC;
+$orange: #F18D05;
+$yellow: #D0D102;
+$green: #61AE24;
+$blue: #00A1CB;
+$red: #E54028;
+$pink: #D70060;
+
+$body-bg: $light;
+$body-fg: $dark;
+
+/*
+ * General tags
+ */
+body {
+    background: $body-bg;
+    color: $body-fg;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #E54028;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+p {
+    margin: 10px 0px;
+    line-height: 1.4em;
+
+    &.indent {
+        text-indent: 20px;
+    }
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0px 0px 5px 0px;
+}
+
+h2 {
+    font-size: 28px;
+    border-bottom: 1px solid $gray;
+    padding: 5px 0px;
+}
+
+$nav-height: 44px;
+.nav-bar {
+    background: #F9F9F9;
+    border-bottom: 3px solid $gray;
+    margin: 0px;
+    line-height: $nav-height;
+
+    .title {
+        display: block;
+        float: left;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 47px;
+        color: $red;
+    }
+    
+    .links {
+        border-spacing: 0px;
+        width: 100%;
+        position: relative;
+        top: 3px;
+
+        td {
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 3px solid $orange;
+            padding: 0px 15px;
+
+            a {
+                color: $dark;
+            }
+
+            &:nth-child(1) {
+                border-color: $pink;
+            }
+
+            &:nth-child(2) {
+                border-color: $red;
+            }
+
+            &:nth-child(3) {
+                border-color: $orange;
+            }
+
+            &:nth-child(4) {
+                border-color: $green;
+            }
+
+            &:nth-child(5) {
+                border-color: $blue;
+            }
+        }
+    }
+
+    .mobile-nav {
+        display: none;
+        box-sizing: border-box;
+        padding: 3px 10px;
+
+        .menu {
+            display: block;
+            float: right;
+
+            img {
+                width: 28px;
+                height: 28px;
+                vertical-align: middle;
+            }
+        }
+
+    }
+    
+    .mobile-links {
+        border-top: 1px solid lighten($gray, 10%);
+        padding: 10px 0px;
+        display: none;
+
+        .mobile-link {
+            color: $dark;
+            line-height: 1em;
+            border-left: 5px solid;
+            padding: 13px 10px;
+            box-sizing: border-box;
+            font-weight: normal;
+
+            &:nth-child(1) {
+                border-color: $pink;
+            }
+
+            &:nth-child(2) {
+                border-color: $red;
+            }
+
+            &:nth-child(3) {
+                border-color: $orange;
+            }
+
+            &:nth-child(4) {
+                border-color: $green;
+            }
+
+            &:nth-child(5) {
+                border-color: $blue;
+            }
+        }
+    }
+}
+
+/*
+ * Body stuff
+ */
+.cover {
+    height: 650px;
+    text-align: center;
+    margin: 0px;
+
+    .greeting {
+        margin-top: 220px;
+    }
+
+    &.index {
+        background: $white url('/static/cover.jpg');
+        background-size: cover;
+    }
+
+    &.hacker-night {
+        background: $white url('/static/hacker-night.jpg');
+        background-size: cover;
+    }
+
+    &.hackathon {
+        background: $white url('/static/hackathon.jpg');
+        background-size: cover;
+
+        .greeting {
+            margin-top: 120px;
+        }
+    }
+    
+    .about {
+        background: rgba(0, 0, 0, .75);
+        line-height: 1.5em;
+        font-size: 18px;
+        color: $white;
+        padding: 15px;
+    }
+
+    h1 {
+        color: $white;
+        font-weight: normal;
+        font-size: 72px;
+        text-shadow: 0px 0px 7px #000;
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+.mobile-news-header {
+    display: none !important;
+
+    h1 {
+        margin: 25px 0px 0px 0px;
+        padding: 0px 20px;
+    }
+}
+
+.post {
+    background: $white;
+    padding: 10px 20px;
+    margin: 25px 0px 0px 0px;
+    border: 1px solid $gray;
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        margin: 5px 0px;
+        padding: 0px;
+        color: $red;
+    }
+
+    .post-meta {
+        font-size: 16px;
+        line-height: 1em;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+.sidebox-container {
+    float: right !important;
+}
+
+.sidebox {
+    margin-top: 25px;
+    background: $white;
+    padding: 10px 15px;
+    border: 1px solid $gray;
+
+    h1 {
+        color: $red;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+            font-size: 16px;
+            padding: 5px 0px;
+
+            &:before {
+                content: "\00bb";
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+.page-intro {
+    text-align: center;
+    margin-top: 30px;
+
+    h1 {
+        color: $blue;
+        font-size: 48px;
+    }
+}
+
+.project {
+    background: $white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 25px;
+    border: 1px solid $gray;
+
+    .project-title {
+        display: block;
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .project-description {
+        margin: 0px 0px;
+    }
+}
+
+/*
+ * Hacker Night promo page
+ */
+.text-box {
+    background: $white;
+    margin-top: 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid $gray;
+
+    h3 {
+        color: $pink;
+    }
+}
+
+/*
+ * Hackathon promos
+ */ 
+.faq-container {
+    padding: 0px;
+
+    h1 {
+        padding: 15px 15px 5px 15px;
+        margin: 0px;
+    }
+
+    h3 {
+        margin: 5px 0px;
+    }
+
+    .faq-question {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .columns {
+        margin: 0px 0px 0px 0px !important;
+    }
+}
+
+.register {
+    display: block;
+    background: $orange;
+    color: $white;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: normal;
+    box-shadow: 0px 0px 15px darken($dark, 20%);
+
+    &:active {
+        box-shadow: none;
+    }
+}
+
+/*
+ * Finishing up
+ */
+.footer {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+/*
+ * Let's get responsive
+ */
+$break-large:            "only screen and (max-width: 959px)";
+$break-tablet:           "only screen and (min-width: 768px) and (max-width: 959px)";
+$break-mobile-all:       "only screen and (max-width: 767px)";
+$break-mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
+$break-mobile-portrait:  "@media only screen and (max-width: 479px)";
+
+@media #{$break-large} {
+    .links td {
+        padding: 0px 0px;
+        line-height: 42px;
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .cover {
+        height: 600px;
+
+        .greeting {
+            margin-top: 175px;
+        }
+    }
+}
+
+@media #{$break-mobile-all} {
+    .container:not(.no-expand) {
+        width: 100% !important;
+
+        .columns:not(.no-expand), .column {
+            width: 100% !important;
+        }
+    }
+
+    .nav-bar {
+        .large-nav {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: block !important;
+        }
+    }
+
+    .cover {
+        height: 350px;
+
+        .greeting {
+            margin-top: 50px !important;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .about {
+            font-size: 16px;
+        }
+
+        &.hackathon {
+            height: auto;
+            padding-bottom: 25px;
+        }
+    }
+
+    .post, .sidebox, .project {
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .mobile-news-header {
+        display: block !important;
+    }
+
+    .post {
+        h1 {
+            font-size: 22px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+        }
+    }
+
+    .page-intro {
+        padding: 15px 0px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        p {
+            padding: 0px 15px;
+        }
+    }
+
+    .project, .text-box {
+        margin-top: 10px !important;
+        text-align: center;
+    }
+}

@@ -1,88 +1,10 @@
 /*
- * General tags
- */
-body {
-    background: #EEE;
-    color: #616161;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    min-width: 600px;
-}
-
-a {
-    color: #E54028;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-p {
-    margin: 10px 0px;
-    line-height: 1.4em;
-}
-
-p.indent {
-    text-indent: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    margin: 0px 0px 5px;
-}
-
-h2 {
-    font-size: 28px;
-    border-bottom: 1px solid #CCC;
-    padding: 5px 0px;
-}
-
-/*
  * Top/nav bar
  */
-.nav {
-    margin: 0px auto -3px auto;
-    text-align: center;
-    border-spacing: 0px 0px;
-    float: right;
-}
-
-.nav_bar {
-    background: #F9F9F9;
-    border-bottom: 3px solid #CCC;
-    margin: 0px 0px 15px 0px;
-    height: 44px;
-}
-
-.nav_title {
-    display: block;
-    float: left;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 47px;
-}
-
-.nav td a {
-    display: block;
-    color: #616161;
-    padding: 10px 20px;
-    margin: 0px 0px;
-    font-size: 18px;
-}
-
-.nav td {
-    border-bottom: 3px solid #000;
-}
-
-.nav td.selected a {
-    color: #E54028;
-}
-
 /*
  * Navbar colors
  */
-.border_red {
+.border_orange {
     border-color: #F18D05 !important;
 }
 
@@ -96,6 +18,10 @@ h2 {
 
 .border_blue {
     border-color: #00A1CB !important;
+}
+
+.border_red {
+    border-color: #E54028 !important;
 }
 
 /*
