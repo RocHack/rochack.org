@@ -347,6 +347,10 @@ $nav-height: 44px;
     .faq-question {
         padding: 15px;
         box-sizing: border-box;
+
+        .hax {
+            color: $orange;
+        }
     }
 
     .columns {
