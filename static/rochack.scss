@@ -318,6 +318,20 @@ $nav-height: 44px;
 /*
  * Hackathon promos
  */ 
+.sponsor {
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+
+    img {
+        width: 100%;
+    }
+
+    &:nth-child(3) {
+        padding-top: 35px;
+    }
+}
+
 .faq-container {
     padding: 0px;
 
