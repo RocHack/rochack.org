@@ -8,7 +8,12 @@
         }
     }
 
+    function clickHackathonRegister() {
+        _gaq.push(["_trackEvent", "Buttons", "Click", "Hackathon register"]);
+    }
+
     window.onload = function() {
         document.getElementById("menu").onclick = clickMenu;
+        document.getElementById("hackathon-register").onclick = clickHackathonRegister;
     }
 })();
