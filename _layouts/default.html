@@ -3,6 +3,7 @@
     <head>
         <title>RocHack{% if page.title %} - {{ page.title }} {% endif %}</title>
         <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta property="og:image" content="{% if page.ogimage %}{{ page.ogimage }}{% else %}//avatars0.githubusercontent.com/u/1253045?s=600{% endif %}"/>
         <link rel="stylesheet" type="text/css" href="static/rochack.css" />
         <link rel="stylesheet" type="text/css" href="static/skeleton.css" />
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
