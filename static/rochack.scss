@@ -327,6 +327,13 @@ $nav-height: 44px;
         width: 100%;
     }
 
+    &.centered {
+        box-sizing: content-box;
+        img {
+            width: 95%;
+        }
+    }
+
 }
 
 .faq-container {
