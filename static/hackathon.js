@@ -4,7 +4,7 @@
 		var times = {
             "hacker":"Sun Apr 13 2014 14:30:00 GMT-0400 (EDT)",
             //"hacker":"Sun Apr 12 2014 14:00:00 GMT-0400 (EDT)",
-            "food":"Sun Apr 12 2014 17:30:00 GMT-0400 (EDT)"
+            "food":"Sun Apr 12 2014 22:00:00 GMT-0400 (EDT)"
         };
 
 		var update = function()
@@ -19,6 +19,12 @@
 				var secs = Math.max(Math.floor(totalSeconds % 60), 0);
 				var mins = Math.max(Math.floor((totalSeconds/60) % 60), 0);
 				var hours = Math.max(Math.floor((totalSeconds/3600) % 60), 0);
+
+				if (secs.toString().length == 1)
+					secs = "0"+secs;
+
+				if (mins.toString().length == 1)
+					mins = "0"+mins;
 
 				$('#'+key+'-hours').html(hours);
 				$('#'+key+'-mins').html(mins);
