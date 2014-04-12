@@ -2,7 +2,7 @@
 {
 	$(document).ready(function() {
 		var times = {
-            "hacker":"Sun Apr 13 2014 14:00:00 GMT-0400 (EDT)",
+            "hacker":"Sun Apr 13 2014 14:30:00 GMT-0400 (EDT)",
             //"hacker":"Sun Apr 12 2014 14:00:00 GMT-0400 (EDT)",
             "food":"Sun Apr 12 2014 17:30:00 GMT-0400 (EDT)"
         };
