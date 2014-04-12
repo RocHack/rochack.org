@@ -18,7 +18,7 @@ $body-fg: $dark;
 @import "skeleton";
 
 body {
-    background: $white url('/static/mel.png');
+    background: $dark url('/static/mel.png');
     background-size: cover;
     background-repeat: no-repeat;
     color: $white;
