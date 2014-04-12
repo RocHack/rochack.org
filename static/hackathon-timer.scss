@@ -15,6 +15,8 @@ $pink: #D70060;
 $body-bg: $light;
 $body-fg: $dark;
 
+@import "skeleton";
+
 body {
     background: $white url('/static/hackathon.jpg');
     background-size: cover;
@@ -26,7 +28,19 @@ body {
     padding: 0px;
 }
 
+.container {
+    @include container;
+}
+
 .box {
+    &.timers {
+        @include columns(10);
+    }
+    
+    &.twitter {
+        @include columns(6);
+    }
+
     background: rgba(0, 0, 0, .45);
     padding: 15px;
     box-sizing: border-box;
@@ -41,12 +55,11 @@ body {
     }
 
     .timer {
-        font-size: 72px;
+        font-size: 108px;
         text-align: center;
 
         .time {
             font-size: 16px;
         }
     }
-
 }
