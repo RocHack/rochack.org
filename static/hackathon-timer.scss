@@ -1,0 +1,52 @@
+/*
+ * Constants
+ */
+$white: #FFF;
+$light: #EEE;
+$dark: #616161;
+$gray: #CCC;
+$orange: #F18D05;
+$yellow: #D0D102;
+$green: #61AE24;
+$blue: #00A1CB;
+$red: #E54028;
+$pink: #D70060;
+
+$body-bg: $light;
+$body-fg: $dark;
+
+body {
+    background: $white url('/static/hackathon.jpg');
+    background-size: cover;
+    color: $white;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 50px 0px 0px 0px;
+    padding: 0px;
+}
+
+.box {
+    background: rgba(0, 0, 0, .45);
+    padding: 15px;
+    box-sizing: border-box;
+
+    h1 {
+        margin: 5px 0px;
+        padding: 0px;
+
+        &:not(:first-child) {
+            margin-top: 50px;
+        }
+    }
+
+    .timer {
+        font-size: 72px;
+        text-align: center;
+
+        .time {
+            font-size: 16px;
+        }
+    }
+
+}
