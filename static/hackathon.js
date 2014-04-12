@@ -28,5 +28,9 @@
 
 		update();
 		setInterval(update, 1000); 
+
+		setInterval(function () {
+			location.reload();
+		}, 60000); 
 	})
 })();
