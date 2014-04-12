@@ -16,9 +16,9 @@
 				var end = new Date(times[key]);
 				var totalSeconds = (end - now)/1000;
 				
-				var secs = Math.floor(totalSeconds % 60);
-				var mins = Math.floor((totalSeconds/60) % 60);
-				var hours = Math.floor((totalSeconds/3600) % 60);
+				var secs = Math.max(Math.floor(totalSeconds % 60), 0);
+				var mins = Math.max(Math.floor((totalSeconds/60) % 60), 0);
+				var hours = Math.max(Math.floor((totalSeconds/3600) % 60), 0);
 
 				$('#'+key+'-hours').html(hours);
 				$('#'+key+'-mins').html(mins);
