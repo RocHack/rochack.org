@@ -18,8 +18,9 @@ $body-fg: $dark;
 @import "skeleton";
 
 body {
-    background: $white url('/static/hackathon.jpg');
+    background: $white url('/static/mel.png');
     background-size: cover;
+    background-repeat: no-repeat;
     color: $white;
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
