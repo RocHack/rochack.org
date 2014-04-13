@@ -40,10 +40,10 @@
             if (mins.toString().length == 1)
                 mins = "0"+mins;
 
-            $('#time-hours').html(hours == 0 ? 12 : hours % 12);
+            $('#time-hours').html((hours % 12) == 0 ? 12 : hours % 12);
             $('#time-mins').html(mins);
             $('#time-secs').html(secs);
-            $('#time-ampm').html((hours > 12) ? "pm" : "am");
+            $('#time-ampm').html((hours >= 12) ? "pm" : "am");
 		};
 
 		update();
