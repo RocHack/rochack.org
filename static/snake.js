@@ -1,3 +1,5 @@
+/* snake game and ai -- sloppily hacked by victor liu */
+
 var canvas = document.getElementById('snake-canvas');
 
 var ctx = canvas.getContext('2d');
