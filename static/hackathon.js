@@ -45,7 +45,7 @@
             $('#time-secs').html(secs);
             $('#time-ampm').html((hours > 12) ? "pm" : "am");
 
-            if (secs == 0 || secs == 30)
+            if (secs == 0)
             {
 				location.reload();
             }
