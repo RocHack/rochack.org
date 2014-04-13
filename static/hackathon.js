@@ -29,7 +29,23 @@
 				$('#'+key+'-hours').html(hours);
 				$('#'+key+'-mins').html(mins);
 				$('#'+key+'-secs').html(secs);
+
 			}
+
+            var end = new Date();
+            var secs = end.getSeconds();
+            var mins = end.getMinutes();
+            var hours = end.getHours();
+            if (secs.toString().length == 1)
+                secs = "0"+secs;
+
+            if (mins.toString().length == 1)
+                mins = "0"+mins;
+
+            $('#time-hours').html(hours % 12);
+            $('#time-mins').html(mins);
+            $('#time-secs').html(secs);
+            $('#time-ampm').html((hours > 12) ? "pm" : "am");
 		};
 
 		update();
