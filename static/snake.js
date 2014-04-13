@@ -19,7 +19,7 @@ var PAUSED;
 var speed = 200;
 
 var snake;
-var numSnakes = 5;
+var numSnakes = 4;
 var length;
 
 var dir, userdir;
@@ -87,6 +87,7 @@ var timer = setInterval(function() {
 			if (sNum == 0) r = 120;
 			if (sNum == 1) g = 120;
 			if (sNum == 2) b = 120;
+			if (sNum == 3) b = 14;
 			ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
 			for (var n = sequence[sNum].length - 1; n >= 0; n--) {
 				//k++;
@@ -134,7 +135,7 @@ function init() {
 	for (var i = 0; i < numSnakes; i++) snake[i] = [];
 	food = [];
 	for (var n = 0; n < numSnakes; n++) food[n] = makeFood();
-	length = [15, 15, 15];
+	length = [15, 15, 15, 15];
 	for (var n = 0; n < numSnakes; n++) {
 		var randomSeed = {};
 		randomSeed.x = Math.floor(Math.random() * (width - length[n] - 10) + length[n] + 2);
@@ -148,7 +149,7 @@ function init() {
 	}
 	GAME_OVER = false;
 	PAUSED = false;
-	dir = [0, 0, 0];
+	dir = [0, 0, 0, 0];
 	userdir = 0;
 	pixel_width = SCREEN_WIDTH / width;
 	pixel_height = SCREEN_HEIGHT / height;
