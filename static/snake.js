@@ -31,7 +31,7 @@ var sequence, areas;
 var target;
 var gap = 5;
 
-var auto = false;
+var auto = true;
 
 init();
 
