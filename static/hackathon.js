@@ -50,6 +50,6 @@
 		setInterval(update, 1000); 
         setInterval(function() {
             location.reload();
-        }, 60000);
+        }, 15*60*1000);
 	})
 })();
