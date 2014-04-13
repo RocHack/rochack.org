@@ -9,14 +9,14 @@ var SCREEN_HEIGHT = $(window).height();
 $('#snake-canvas').attr('width', SCREEN_WIDTH);
 $('#snake-canvas').attr('height', SCREEN_HEIGHT);
 
-var pixel_width = 15, pixel_height = 15;
+var pixel_width = 20, pixel_height = 20;
 
 var width = Math.floor(SCREEN_WIDTH / pixel_width), height = Math.floor(SCREEN_HEIGHT / pixel_height);
 
 var GAME_OVER;
 var PAUSED;
 
-var speed = 90;
+var speed = 200;
 
 var snake;
 var numSnakes = 3;
@@ -146,7 +146,6 @@ function init() {
 			snake[n].unshift(p);
 		}
 	}
-	console.log(snake[0]);
 	GAME_OVER = false;
 	PAUSED = false;
 	dir = [0, 0, 0];
