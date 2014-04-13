@@ -7,12 +7,6 @@
             "food":"Sun Apr 12 2014 22:00:00 GMT-0400 (EDT)"
         };
 
-        // Get random image
-        $.getJSON("http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC", function(data) {
-            $("body").css("background-image", "url('"+ data['data']['image_original_url'] +"')");
-        });
-
-
 		var update = function()
 		{
 			var now = new Date();
