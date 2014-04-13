@@ -7,6 +7,7 @@
             "food":"Sun Apr 12 2014 22:00:00 GMT-0400 (EDT)"
         };
 
+
 		var update = function()
 		{
 			var now = new Date();
@@ -29,7 +30,6 @@
 				$('#'+key+'-hours').html(hours);
 				$('#'+key+'-mins').html(mins);
 				$('#'+key+'-secs').html(secs);
-
 			}
 
             var end = new Date();
