@@ -51,13 +51,14 @@
             $('#time-mins').html(mins);
             $('#time-secs').html(secs);
             $('#time-ampm').html((hours > 12) ? "pm" : "am");
+
+            if (secs == 0 || secs == 30)
+            {
+				location.reload();
+            }
 		};
 
 		update();
 		setInterval(update, 1000); 
-
-		setInterval(function () {
-			location.reload();
-		}, 60000); 
 	})
 })();
