@@ -1,4 +1,4 @@
-/* snake game and ai -- sloppily hacked by victor liu */
+/* multisnake, hastily hacked by victor liu */
 
 var canvas = document.getElementById('snake-canvas');
 
@@ -9,16 +9,17 @@ var SCREEN_HEIGHT = $(window).height();
 $('#snake-canvas').attr('width', SCREEN_WIDTH);
 $('#snake-canvas').attr('height', SCREEN_HEIGHT);
 
-var pixel_width = 40, pixel_height = 40;
+var pixel_width = 15, pixel_height = 15;
 
 var width = Math.floor(SCREEN_WIDTH / pixel_width), height = Math.floor(SCREEN_HEIGHT / pixel_height);
 
 var GAME_OVER;
 var PAUSED;
 
-var speed = 100;
+var speed = 90;
 
 var snake;
+var numSnakes = 3;
 var length;
 
 var dir, userdir;
@@ -29,7 +30,7 @@ var dir, userdir;
 
 var sequence, areas;
 var target;
-var gap = 5;
+var gap = 1;
 
 var auto = true;
 
@@ -37,21 +38,21 @@ init();
 
 $(this).keydown(function(e) {
 	if (e.keyCode == 37) {	// left
-		if (dir != 2) {
+		
 			userdir = 0;
-		}
+		
 	} else if (e.keyCode == 38) {	// up
-		if (dir != 3) {
+		
 			userdir = 1;
-		}
+		
 	} else if (e.keyCode == 39) {	// right
-		if (dir != 0) {
+		
 			userdir = 2;
-		}
+		
 	} else if (e.keyCode == 40) {	// down
-		if (dir != 1) {
+		
 			userdir = 3;
-		}
+		
 	} else if (e.keyCode == 84) { 	// t
 		auto = !auto;
 	}
@@ -75,47 +76,81 @@ var timer = setInterval(function() {
 	
 	ctx.fillStyle = "#111";
 	ctx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-	
+
 	// draw path
 	if (auto) {
-		ctx.fillStyle = "#CCFF33";
-		for (var n = 0; n < sequence.length; n++) {
-			var p = sequence[n];
-			ctx.fillRect(p.x * pixel_width + (5 * gap) / 2, p.y * pixel_height + (5 * gap) / 2,
-                        pixel_width - 5 * gap, pixel_height - 5 * gap);
+		for (var sNum = 0; sNum < numSnakes; sNum++) {
+			//var k = 0;
+			var r = 90;
+			var g = 90;
+			var b = 90;
+			if (sNum == 0) r = 120;
+			if (sNum == 1) g = 120;
+			if (sNum == 2) b = 120;
+			ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+			for (var n = sequence[sNum].length - 1; n >= 0; n--) {
+				//k++;
+				//if (k % 2 == 0) continue;
+				var p = sequence[sNum][n];
+				ctx.fillRect(p.x * pixel_width + (10 * gap) / 2, p.y * pixel_height + (10 * gap) / 2,
+							pixel_width - 10 * gap, pixel_height - 10 * gap);
+			}
 		}
 	}
 	
 	// draw snake
-	for (var i = 0; i < snake.length; i++) {
-		var	v = 1 - (i * 0.5 / snake.length);
-		var r = Math.floor(255 * v);
-		var g = Math.floor(255 * v);
-		var b = Math.floor(255);
-		ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
-		ctx.fillRect(snake[i].x * pixel_width, snake[i].y * pixel_height, pixel_width - gap, pixel_height - gap);
+	for (var sNum = 0; sNum < numSnakes; sNum++) {
+		for (var i = 0; i < snake[sNum].length; i++) {
+			var	v = 1 - (i * 0.5 / snake[sNum].length);
+			var r = Math.floor(255 * v);
+			var g = Math.floor(255 * v);
+			var b = Math.floor(255 * v);
+			if (sNum == 0) r = 255;
+			if (sNum == 1) g = 255;
+			if (sNum == 2) b = 255;
+			ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+			ctx.fillRect(snake[sNum][i].x * pixel_width, snake[sNum][i].y * pixel_height, pixel_width - gap, pixel_height - gap);
+		}
 	}
 	
 	// draw food
-	ctx.fillStyle = "#FF6600";
-	ctx.fillRect(food.x * pixel_width + gap/2, food.y * pixel_height + gap/2, pixel_width - gap, pixel_height - gap);
+	for (var sNum = 0; sNum < numSnakes; sNum++) {
+		var	v = 1 - (i * 0.5 / snake[sNum].length);
+		var r = Math.floor(255 * v);
+		var g = Math.floor(255 * v);
+		var b = Math.floor(255 * v);
+		if (sNum == 0) r = 255;
+		if (sNum == 1) g = 255;
+		if (sNum == 2) b = 255;
+		ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+		ctx.fillRect(food[sNum].x * pixel_width + gap/2, food[sNum].y * pixel_height + gap/2, pixel_width - gap, pixel_height - gap);
+	}
 
 }, speed);
 
 function init() {
 	triggered = false;
-	snake = [];
-	food = makeFood();
-	length = 5;
-	for (var i = 0; i < length; i++) {
-		var p = {};
-		p.x = Math.floor(width / 2) - i;
-		p.y = Math.floor(height / 2);
-		snake.unshift(p);
+	snake = new Array(numSnakes);
+	for (var i = 0; i < numSnakes; i++) snake[i] = [];
+	food = [];
+	for (var n = 0; n < numSnakes; n++) food[n] = makeFood();
+	length = [15, 15, 15];
+	for (var n = 0; n < numSnakes; n++) {
+		var randomSeed = {};
+		randomSeed.x = Math.floor(Math.random() * (width - length[n] - 10) + length[n] + 2);
+		randomSeed.y = n * 3;
+		for (var i = 0; i < length[n]; i++) {
+			var p = {};
+			p.x = randomSeed.x - i;
+			p.y = randomSeed.y;
+			snake[n].unshift(p);
+		}
 	}
+	console.log(snake[0]);
 	GAME_OVER = false;
 	PAUSED = false;
-	dir = userdir = 0;
+	dir = [0, 0, 0];
+	userdir = 0;
 	pixel_width = SCREEN_WIDTH / width;
 	pixel_height = SCREEN_HEIGHT / height;
 	sequence = [];
@@ -128,18 +163,20 @@ function init() {
 function makeFood() {
 	points = [];
 	var p;
-	for (var x = 0; x < width; x++) {
-		for (var y = 0; y < height; y++) {
-			p = {};
-			p.x = x;
-			p.y = y;
-			if (!containsPoint(snake, p)) {
-				points.unshift(p);
+	for (var n = 0; n < numSnakes; n++) {
+		for (var x = 0; x < width; x++) {
+			for (var y = 0; y < height; y++) {
+				p = {};
+				p.x = x;
+				p.y = y;
+				if (!containsPoint(snake[n], p)) {
+					points.unshift(p);
+				}
 			}
 		}
-	}
-	if (points.length == 0) {
-		alert('you win!');
+		if (points.length == 0) {
+			alert('you win!');
+		}
 	}
 	return points[Math.floor(Math.random() * points.length)];
 }
@@ -151,37 +188,50 @@ function update() {
 	}
 	
 	if (auto) {
-		dir = userdir = dijkstra(food);
+		dir[0] = dijkstra(food[0], 0);
+		dir[1] = dijkstra(food[1], 1);
+		dir[2] = dijkstra(food[2], 2);
 	} else {
-		dir = userdir;
+		dir[0] = userdir;
+		dir[1] = userdir;
+		dir[2] = userdir;
 	}
 	
-	snake[0].d = dir;
-	snake.unshift(nextPoint(snake[0], dir));
+	for (var sNum = 0; sNum < numSnakes; sNum++) {
+		snake[sNum][0].d = dir[sNum];
+		snake[sNum].unshift(nextPoint(snake[sNum][0], dir[sNum]));
+	}
 	
-	if (ateFood()) {
-		food = makeFood();
-		length++;
-	} else {
-		snake.pop();
+	for (var sNum = 0; sNum < numSnakes; sNum++) {
+		if (snake[sNum][0].x == food[sNum].x && snake[sNum][0].y == food[sNum].y) {
+			food[sNum] = makeFood();
+			//length++;
+		} else {
+			snake[sNum].pop();
+		}
 	}
 	
 }
 
 function isDead() {
-	for (var i = 0; i < snake.length; i++) {
-		for (var j = 0; j < snake.length; j++) {
-			if (i == j) continue;
-			if (snake[i].x == snake[j].x && snake[i].y == snake[j].y) return true;
-		}
-	}
-	var head = snake[0];
-	return head.x < 0 || head.x >= width ||
-               head.y < 0 || head.y >= height;
-}
 
-function ateFood() {
-	return snake[0].x == food.x && snake[0].y == food.y;
+	for (var sNum = 0; sNum < numSnakes; sNum++) {
+	for (var sNum1 = 0; sNum1 < numSnakes; sNum1++) {
+		for (var i = 0; i < snake[sNum].length; i++) {
+			for (var j = 0; j < snake[sNum1].length; j++) {
+				if (i == j) continue;
+				
+					if (snake[sNum][i].x == snake[sNum1][j].x && snake[sNum][i].y == snake[sNum1][j].y) return true;
+				
+			}
+		}
+		}
+		var head = snake[sNum][0];
+		if (head.x < 0 || head.x >= width ||
+				   head.y < 0 || head.y >= height) return true;
+	}
+	
+	return false;
 }
 
 function nextPoint(point, dir) {
@@ -230,7 +280,9 @@ function nextPoint(point, dir) {
 
 
 
-function dijkstra(target) {
+function dijkstra(target, sNum) {
+
+	if (target == undefined) return 0;
 	
 	var G = {};
 	G.graph = new Array(height);			// will be declared
@@ -247,7 +299,7 @@ function dijkstra(target) {
 	}
 	
 	var destination_node = G.graph[target.y][target.x];
-	var initial_node = G.graph[snake[0].y][snake[0].x];
+	var initial_node = G.graph[snake[sNum][0].y][snake[sNum][0].x];
 
 	initial_node.t_dist = 0;
 	unvisited_set = [];
@@ -275,7 +327,7 @@ function dijkstra(target) {
 		
 		current.visited = true;
 
-		neighbors = getNeighbors(current, G);
+		neighbors = getNeighbors(current, G, sNum);
 		//console.log(neighbors);
 		
 		var alt;
@@ -292,46 +344,46 @@ function dijkstra(target) {
 		
 	}
 
-	sequence = [];
+	sequence[sNum] = [];
 	var node = destination_node;
 	
 	while (node.previous !== undefined) {
 		var p = {};
 		p.x = node.x;
 		p.y = node.y;
-		sequence.unshift(p);
+		sequence[sNum].unshift(p);
 		node = node.previous;
 	}
 
-	if (sequence.length > 0) {
-		return getDirection(snake[0], sequence[0]);
+	if (sequence[sNum].length > 0) {
+		return getDirection(snake[sNum][0], sequence[sNum][0]);
 	}
 	
 	return 0;
 	
 }
 
-function getNeighbors(current, G) {
+function getNeighbors(current, G, sNum) {
 	var neighbors = [];
 	var up = {};
 	up.x = current.x;
 	up.y = current.y-1;
-	if (!containsPoint(snake, up) && current.x >= 0 && current.x < width &&
+	if (!containsPoint(snake[0], up) && !containsPoint(snake[1], up) && !containsPoint(snake[2], up) && current.x >= 0 && current.x < width &&
 		current.y - 1 >= 0 && current.y - 1 < height) neighbors.push(G.graph[up.y][up.x]);
 	var dn = {};
 	dn.x = current.x;
 	dn.y = current.y+1;
-	if (!containsPoint(snake, dn) && current.x >= 0 && current.x < width &&
+	if (!containsPoint(snake[0], dn) && !containsPoint(snake[1], dn) && !containsPoint(snake[2], dn) && current.x >= 0 && current.x < width &&
 		current.y + 1 >= 0 && current.y + 1 < height) neighbors.push(G.graph[dn.y][dn.x]);
 	var lt = {};
 	lt.x = current.x-1;
 	lt.y = current.y;
-	if (!containsPoint(snake, lt) && current.x - 1 >= 0 && current.x - 1 < width &&
+	if (!containsPoint(snake[0], lt) && !containsPoint(snake[1], lt) && !containsPoint(snake[2], lt) && current.x - 1 >= 0 && current.x - 1 < width &&
 		current.y >= 0 && current.y < height) neighbors.push(G.graph[lt.y][lt.x]);
 	var rt = {};
 	rt.x = current.x+1;
 	rt.y = current.y;
-	if (!containsPoint(snake, rt) && current.x + 1 >= 0 && current.x + 1 < width &&
+	if (!containsPoint(snake[0], rt) && !containsPoint(snake[1], rt) && !containsPoint(snake[2], rt) && current.x + 1 >= 0 && current.x + 1 < width &&
 		current.y >= 0 && current.y < height) neighbors.push(G.graph[rt.y][rt.x]);
 	return neighbors;
 }
