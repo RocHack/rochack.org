@@ -19,7 +19,7 @@ var PAUSED;
 var speed = 200;
 
 var snake;
-var numSnakes = 5;
+var numSnakes = 3;
 var length;
 
 var dir, userdir;
