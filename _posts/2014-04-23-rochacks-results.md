@@ -26,10 +26,16 @@ Here are a few photos from the event:
 ![Showing off the LED staircase equipment](/static/photos/rochacks2014/0092.jpg)
 <div class="photo-caption">Showing off the LED staircase equipment.</div>
 
+![Sparkfun](/static/photos/rochacks2014/0544.jpg)
+<div class="photo-caption">Sparkfun swag!</div>
+
 ![Dinner time from Wegmans](/static/photos/rochacks2014/0008.jpg)
 <div class="photo-caption">Dinner time!</div>
 
 ![The interface for the video-powered step sequencer](/static/photos/rochacks2014/0153.jpg)
 <div class="photo-caption">The interface for the video-powered step sequencer.</div>
+
+![Status board](/static/photos/rochacks2014/0546.jpg)
+<div class="photo-caption">The status board with a live AI snake game being played in the background.</div>
 
 We're looking forward to hosting a (hopefully even bigger) RocHacks next Spring. Hopefully we'll see you all there!
