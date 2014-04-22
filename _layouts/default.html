@@ -10,6 +10,31 @@
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
         <script src="/static/rochack.js"></script>
+
+        <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+
+        {% if page.description %}
+            <meta name="description" content="{{ page.description }}">
+            <meta name="twitter:description" content="{{ page.description }}" />
+            <meta property="og:description" content="{{ page.description }}" />
+        {% else %}
+            <meta name="description" content="{{ site.description }}">
+            <meta name="twitter:description" content="{{ site.description }}" />
+            <meta property="og:description" content="{{ site.description }}" />
+        {% endif %}
+
+        <meta property="og:site_name" content="RocHack" />
+        <meta property="og:type" content="blog"/>
+        <meta property="og:image" content="{{ site.social-image }}" />
+        <meta name="twitter:image" content="{{ site.social-image }}" />
+        {% if page.title %}
+            <meta property="og:title" content="{{ page.title }} - RocHack" />
+            <meta name="twitter:title" content="{{ page.title }}" />
+        {% else %}
+            <meta property="og:title" content="RocHack" />
+            <meta name="twitter:title" content="RocHack" />
+        {% endif %}
+        <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
     </head>
     <body>
 
