@@ -37,8 +37,9 @@ width: narrow
         <a class="post-title" href="{{post.url}}">{{ post.title }}</a>
         <div class="post-meta">Posted by {{post.author}} on <a href="{{post.url}}">{{post.date | date: "%B %d, %Y" }}</a></div>
         <div class="post-content">
-            {{ post.content }}
+            {{ post.content | truncatewords: 150 }}
         </div>
+        <a class="post-read" href="{{post.url}}">Read more &raquo;</a>
         </div>
     </div>
     {% endfor %}
