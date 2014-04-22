@@ -229,16 +229,25 @@ $nav-height: 44px;
         max-width: 100%;
     }
 
-    h1 {
+    a.post-title {
+        display: block;
         margin: 5px 0px;
         padding: 0px;
         color: $red;
+        font-size: 28px;
+        font-weight: bold;
     }
 
     .post-meta {
         font-size: 16px;
         line-height: 1em;
         margin: 0px 0px 15px 0px;
+    }
+
+    .photo-caption {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 35px;
     }
 }
 

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="twelve columns offset-by-two">
+        <div class="post">
+            <a class="post-title" href="{{page.url}}">{{ page.title }}</a>
+            <div class="post-meta">Posted by {{page.author}} on <a href="{{page.url}}">{{page.date | date: "%B %d, %Y" }}</a></div>
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
