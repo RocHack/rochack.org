@@ -14,6 +14,7 @@
 
     window.onload = function() {
         document.getElementById("menu").onclick = clickMenu;
-        document.getElementById("hackathon-register").onclick = clickHackathonRegister;
-    }
+        var regLink = document.getElementById("hackathon-register");
+        if (regLink) regLink.onclick = clickHackathonRegister;
+    };
 })();
