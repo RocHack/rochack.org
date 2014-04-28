@@ -3,11 +3,11 @@
 var canvas = document.getElementById('snake-canvas');
 
 var ctx = canvas.getContext('2d');
-var SCREEN_WIDTH = $(window).width();
-var SCREEN_HEIGHT = $(window).height();
+var SCREEN_WIDTH = window.innerWidth;
+var SCREEN_HEIGHT = window.innerHeight;
 
-$('#snake-canvas').attr('width', SCREEN_WIDTH);
-$('#snake-canvas').attr('height', SCREEN_HEIGHT);
+canvas.width = SCREEN_WIDTH;
+canvas.height = SCREEN_HEIGHT;
 
 var pixel_width = 20, pixel_height = 20;
 
@@ -36,7 +36,7 @@ var auto = true;
 
 init();
 
-$(this).keydown(function(e) {
+window.addEventListener("keydown", function(e) {
 	if (e.keyCode == 37) {	// left
 		
 			userdir = 0;
@@ -55,8 +55,11 @@ $(this).keydown(function(e) {
 		
 	} else if (e.keyCode == 84) { 	// t
 		auto = !auto;
+	} else {
+		return;
 	}
-});
+	e.preventDefault();
+}, false);
 
 var triggered = false;
 var timer = setInterval(function() {

@@ -1,7 +1,11 @@
 (function() 
 {
-	$(document).ready(function() {
-		var times = {
+    function $(id) {
+        return document.getElementById(id);
+    }
+
+    window.initTimers = function() {
+        var times = {
             "hacker":"Sun Apr 13 2014 14:00:00 GMT-0400 (EDT)",
             "food":"Sun Apr 13 2014 12:45:00 GMT-0400 (EDT)"
         };
@@ -25,10 +29,10 @@
 				if (mins.toString().length == 1)
 					mins = "0"+mins;
 
-				$('#'+key+'-hours').html(hours);
-				$('#'+key+'-mins').html(mins);
-				$('#'+key+'-secs').html(secs);
-			}
+                $(key+'-hours').innerHTML = hours;
+                $(key+'-mins').innerHTML = mins;
+                $(key+'-secs').innerHTML = secs;
+            }
 
             var end = new Date();
             var secs = end.getSeconds();
@@ -40,16 +44,16 @@
             if (mins.toString().length == 1)
                 mins = "0"+mins;
 
-            $('#time-hours').html((hours % 12) == 0 ? 12 : hours % 12);
-            $('#time-mins').html(mins);
-            $('#time-secs').html(secs);
-            $('#time-ampm').html((hours >= 12) ? "pm" : "am");
-		};
+            $('time-hours').innerHTML = (hours % 12) || 12;
+            $('time-mins').innerHTML = mins;
+            $('time-secs').innerHTML = secs;
+            $('time-ampm').innerHTML = (hours >= 12) ? "pm" : "am";
+        };
 
-		update();
-		setInterval(update, 1000); 
-        setInterval(function() {
+        update();
+        setTimeout(update, 1000);
+        setTimeout(function() {
             location.reload();
         }, 15*60*1000);
-	})
+    };
 })();
