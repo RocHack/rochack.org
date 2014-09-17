@@ -130,7 +130,7 @@ members:
         <h3>Class of {{ members[0] }}</h3>
         <ul class="members">
         {% for member in members[1] %}
-        <li><a{% if member.link %} href="{{ member.link }}"{% endif %}>{{ member.name }}</a></li>
+        <li>{% if member.link %}<a href="{{ member.link }}">{% endif %}{{ member.name }}{% if member.link %}</a>{% endif %}</li>
         {% endfor %}
         </ul>
     {% endfor %}
