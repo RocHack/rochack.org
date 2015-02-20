@@ -37,7 +37,9 @@
     </head>
     <body>
 
-    {% include nav.html %}
+    {% unless page.hideNavigation == false %}
+      {% include nav.html %}
+    {% endunless %}
 
     {{ content }}
 

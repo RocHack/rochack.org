@@ -357,6 +357,12 @@ $nav-height: 44px;
         margin: 5px 0px;
     }
 
+    // TODO: Remove me after we get sponsors!
+    .coming-soon {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
     .container:nth-child(4) .sponsor:nth-child(2) {
         padding-top: 75px;
     }
@@ -377,7 +383,7 @@ $nav-height: 44px;
 
 .register {
     display: block;
-    background: $red;
+    background: $orange;
     color: $white;
     padding: 20px;
     font-size: 18px;
