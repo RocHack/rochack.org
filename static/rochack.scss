@@ -324,6 +324,18 @@ $nav-height: 44px;
     }
 }
 
+.schedule {
+    margin: 0 auto;
+
+    td {
+        vertical-align: top;
+    }
+
+    .schedule-subitem td:first-child {
+        padding-left: 2em;
+    }
+}
+
 /*
  * Hackathon promos
  */
