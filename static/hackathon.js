@@ -3,28 +3,28 @@
 
     var things = [
         // friday
-        ["2016-04-03 17:00", "registration starts"],
-        ["2015-04-03 18:00", "opening ceremony"],
-        ["2015-04-03 19:00", "competition"],
-        ["2015-04-03 20:00", "dinner"],
-        ["2015-04-03 22:30", "snack"],
+        ["Fri Apr 03 2015 17:00:00 GMT-0400 (EDT)", "registration starts"],
+        ["Fri Apr 03 2015 18:00:00 GMT-0400 (EDT)", "opening ceremony"],
+        ["Fri Apr 03 2015 19:00:00 GMT-0400 (EDT)", "competition"],
+        ["Fri Apr 03 2015 20:00:00 GMT-0400 (EDT)", "dinner"],
+        ["Fri Apr 03 2015 22:30:00 GMT-0400 (EDT)", "snack"],
 
         // saturday
-        ["2015-04-04 07:30", "coffee"],
-        ["2015-04-04 08:00", "breakfast"],
-        ["2015-04-04 13:00", "lunch"],
-        ["2015-04-04 17:30", "snack"],
-        ["2015-04-04 19:00", "dinner"],
-        ["2015-04-04 20:00", "dance"],
-        ["2015-04-04 22:30", "snack"],
+        ["Sat Apr 04 2015 07:30:00 GMT-0400 (EDT)", "coffee"],
+        ["Sat Apr 04 2015 08:00:00 GMT-0400 (EDT)", "breakfast"],
+        ["Sat Apr 04 2015 13:00:00 GMT-0400 (EDT)", "lunch"],
+        ["Sat Apr 04 2015 17:30:00 GMT-0400 (EDT)", "snack"],
+        ["Sat Apr 04 2015 19:00:00 GMT-0400 (EDT)", "dinner"],
+        ["Sat Apr 04 2015 20:00:00 GMT-0400 (EDT)", "dance"],
+        ["Sat Apr 04 2015 22:30:00 GMT-0400 (EDT)", "snack"],
 
         // sunday
-        ["2015-04-05 07:30", "coffee"],
-        ["2015-04-05 08:00", "breakfast"],
-        ["2015-04-05 09:00", "hacking ends"],
-        ["2015-04-05 09:30", "presentations"],
-        ["2015-04-05 11:15", "closing"],
-        ["2016-04-04 17:00", "next hackathon"],
+        ["Sun Apr 05 2015 07:30:00 GMT-0400 (EDT)", "coffee"],
+        ["Sun Apr 05 2015 08:00:00 GMT-0400 (EDT)", "breakfast"],
+        ["Sun Apr 05 2015 09:00:00 GMT-0400 (EDT)", "hacking ends"],
+        ["Sun Apr 05 2015 09:30:00 GMT-0400 (EDT)", "presentations"],
+        ["Sun Apr 05 2015 11:15:00 GMT-0400 (EDT)", "closing"],
+        ["Sun Apr 03 2016 17:00:00 GMT-0400 (EDT)", "next hackathon"],
     ].map(function (item, i) {
         return {
             i: i,
@@ -87,8 +87,5 @@
 
     window.initTimers = function() {
         update();
-        setTimeout(function() {
-            location.reload();
-        }, 15*60*1000);
     };
 })();
