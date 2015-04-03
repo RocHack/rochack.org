@@ -14,34 +14,41 @@
 	</style>
         <title>rochack - press T for snake AI!</title>
     </head>
-    <body style="background-color:black">
+    <body>
         <div class="container">
             <div class="box timers">
                 <h1>current time</h1>
                 <div class="timer">
-                    <span id="time-hours"></span>:<span id="time-mins"></span>:<span id="time-secs"></span> <span id="time-ampm"></span>
+                    <span id="time-hours">00</span>:<span id="time-mins">00</span>:<span id="time-secs">00</span> <span id="time-ampm">pm</span>
                 </div>
-                <h1>lunch in</h1>
+				<h1><span id="thing-name">something</span> in</h1>
                 <div class="timer">
-                    <span id="food-hours"></span> <span class="time">hours</span>
-                    <span id="food-mins"></span> <span class="time">minutes</span>
-                    <span id="food-secs"></span> <span class="time">seconds</span>
+                    <span id="thing-hours">00</span> <span class="time">hours</span>
+                    <span id="thing-mins">00</span> <span class="time">minutes</span>
+                    <span id="thing-secs">00</span> <span class="time">seconds</span>
                 </div>
+				<!--
                 <h1>hackathon ends in</h1>
                 <div class="timer">
                     <span id="hacker-hours"></span> <span class="time">hours</span>
                     <span id="hacker-mins"></span> <span class="time">minutes</span>
                     <span id="hacker-secs"></span> <span class="time">seconds</span>
                 </div>
+				-->
             </div>
 
             <script>
+                setTimeout(function() {
+                    location.reload();
+                }, 15*60*1000);
                 initTimers();
             </script>
+			<!--
             <div class="box twitter">
                 <a class="twitter-timeline" href="https://twitter.com/search?q=%23rochacks" data-widget-id="455177978217914368">Tweets about "#rochacks"</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
+			-->
         </div>
         <canvas id="snake-canvas" width="800" height="800"></canvas>
         <script src="static/snake.js" type="text/javascript"></script>

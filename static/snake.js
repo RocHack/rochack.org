@@ -36,6 +36,15 @@ var auto = true;
 
 init();
 
+drawBg();
+
+function drawBg() {
+	ctx.fillStyle = "#111";
+	ctx.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+	ctx.globalAlpha = 0.55;
+	ctx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+}
+
 window.addEventListener("keydown", function(e) {
 	if (e.keyCode == 37) {	// left
 		
@@ -77,8 +86,7 @@ var timer = setInterval(function() {
 		return;
 	}
 	
-	ctx.fillStyle = "#111";
-	ctx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    drawBg();
 
 	// draw path
 	if (auto) {
