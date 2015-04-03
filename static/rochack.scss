@@ -348,6 +348,12 @@ $nav-height: 44px;
 
     img {
         width: 100%;
+        vertical-align: middle;
+
+        &.sponsor-tall {
+            max-height: 108px;
+            width: auto;
+        }
     }
 
     &.centered {
@@ -356,7 +362,6 @@ $nav-height: 44px;
             width: 95%;
         }
     }
-
 }
 
 .faq-container {
