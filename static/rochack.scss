@@ -326,11 +326,13 @@ $nav-height: 44px;
 
 /*
  * Hackathon promos
- */ 
+ */
+
 .sponsor {
     text-align: center;
     padding: 25px;
     box-sizing: border-box;
+    line-height: 64px;
 
     img {
         width: 100%;
@@ -349,22 +351,11 @@ $nav-height: 44px;
     padding: 0px;
 
     h1 {
-        padding: 15px 15px 5px 15px;
-        margin: 0px;
+        margin: 15px 15px 5px 15px;
     }
 
     h3 {
         margin: 5px 0px;
-    }
-
-    // TODO: Remove me after we get sponsors!
-    .coming-soon {
-        text-align: center;
-        padding-bottom: 15px;
-    }
-
-    .container:nth-child(4) .sponsor:nth-child(2) {
-        padding-top: 75px;
     }
 
     .faq-question {
