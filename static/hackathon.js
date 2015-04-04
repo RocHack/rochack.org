@@ -7,7 +7,6 @@
         ["Fri Apr 03 2015 18:00:00 GMT-0400 (EDT)", "opening ceremony"],
         ["Fri Apr 03 2015 19:00:00 GMT-0400 (EDT)", "competition"],
         ["Fri Apr 03 2015 20:00:00 GMT-0400 (EDT)", "dinner"],
-        ["Fri Apr 03 2015 22:30:00 GMT-0400 (EDT)", "snack"],
 
         // saturday
         ["Sat Apr 04 2015 07:30:00 GMT-0400 (EDT)", "coffee"],
