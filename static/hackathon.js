@@ -14,8 +14,8 @@
         ["Sat Apr 04 2015 13:00:00 GMT-0400 (EDT)", "lunch"],
         ["Sat Apr 04 2015 17:30:00 GMT-0400 (EDT)", "snack"],
         ["Sat Apr 04 2015 19:00:00 GMT-0400 (EDT)", "dinner"],
-        ["Sat Apr 04 2015 20:00:00 GMT-0400 (EDT)", "dance"],
-        ["Sat Apr 04 2015 22:30:00 GMT-0400 (EDT)", "snack"],
+        ["Sat Apr 04 2015 20:30:00 GMT-0400 (EDT)", "dance"],
+        ["Sat Apr 04 2015 22:30:00 GMT-0400 (EDT)", "cookies"],
 
         // sunday
         ["Sun Apr 05 2015 07:30:00 GMT-0400 (EDT)", "coffee"],
