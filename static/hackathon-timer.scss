@@ -43,6 +43,15 @@ body {
         @include columns(6);
     }
 
+    &.dancing {
+        position: absolute;
+        bottom: 30px;
+
+        img {
+            width: 200px;
+        }
+    }
+
     background: rgba(0, 0, 0, .45);
     padding: 15px;
     box-sizing: border-box;
