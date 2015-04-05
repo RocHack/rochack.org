@@ -74,3 +74,36 @@ body {
         }
     }
 }
+
+.dandy-lion {
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    left: 120px;
+    animation: bounce 3s, move 6s; // separated by a comma
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0% {
+        left:120px;
+    }
+    50% {
+        left:80%;
+    }
+    100% {
+        left:120px;
+    }
+}
+
+@keyframes move {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 20%;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
