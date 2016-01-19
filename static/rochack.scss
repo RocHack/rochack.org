@@ -231,6 +231,10 @@ $nav-height: 44px;
         max-width: 100%;
     }
 
+    .centerize {
+        text-align: center;
+    }
+
     a.post-title {
         display: block;
         margin: 5px 0px;
@@ -238,6 +242,10 @@ $nav-height: 44px;
         color: $red;
         font-size: 28px;
         font-weight: bold;
+    }
+
+    .post-content {
+        line-height: 1.6em;
     }
 
     .post-meta {

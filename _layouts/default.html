@@ -24,8 +24,13 @@
 
         <meta property="og:site_name" content="RocHack" />
         <meta property="og:type" content="blog"/>
-        <meta property="og:image" content="{{ site.social-image }}" />
-        <meta name="twitter:image" content="{{ site.social-image }}" />
+        {% if page.image %}
+          <meta property="og:image" content="{{ page.image }}" />
+          <meta name="twitter:image" content="{{ page.social-image }}" />
+        {% else %}
+          <meta property="og:image" content="{{ site.social-image }}" />
+          <meta name="twitter:image" content="{{ site.social-image }}" />
+        {% endif %}
         {% if page.title %}
             <meta property="og:title" content="{{ page.title }} - RocHack" />
             <meta name="twitter:title" content="{{ page.title }}" />
