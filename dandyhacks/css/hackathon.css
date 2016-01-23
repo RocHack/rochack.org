@@ -1,0 +1,172 @@
+/*
+ * Constants
+ */
+/*
+ * General tags
+ */
+
+body {
+	background: #EEE;
+	text-align: center;
+	color: #616161;
+	font-weight: 400;
+	font-family: 'Fira Sans', sans-serif;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+
+a {
+	color: #E54028;
+	text-decoration: none;
+	font-weight: 300;
+	}
+
+p {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 17px;
+}
+
+h1 {
+	font-size: 38px;
+	font-family: 'Raleway', sans-serif;	
+}
+
+h1.dandyhacks {
+	font-family: 'Unica One', cursive;
+	font-size: 58px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: light;
+	font-size: 30px;
+	margin-top: 5px;
+}
+
+h2.sponsors {
+	font-size: 20px;
+}
+
+.page {
+	height: auto;
+	/*border-bottom: 10px solid #686868;*/
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.page.main {
+	height: 100%;
+
+}
+.page.image {
+	height: 500px;
+	background: url("../images/bck1.jpg") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.greetings {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+
+.page.about {
+	background: #FFFFCC;
+	/*padding: 10px 0px 0px;*/
+}
+
+.page.sponsors {
+	background: #99CCFF;
+}
+
+.page.faq {
+	height: auto;
+	width: 70%;
+}
+
+.contents {
+	width: 60%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-about {
+	margin-top: 5%;
+}
+
+.container-sponsors {
+	margin-top: 5%;
+}
+
+.container-faq {
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+.faq-container.faq-question {
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.faq-container.faq-question.hax {
+	color: #F18D05;
+}
+
+.faq-container.columns {
+	margin: 0px 0px 0px 0px !important;
+}
+.fun-container {
+	background-image: "images/bck1.jpg";
+}
+.register {
+	display: block;
+	background: #ffb74d;
+	color: #FFF;
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	font-weight: normal;
+	box-shadow: 0px 0px 15px #2e2e2e;
+}
+
+.register:active {
+	box-shadow: none;
+}
+
+.logo {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.logo-image {
+	margin-right: 10px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.large {
+	width: 180px;
+}
+.medium {
+	width: 180px;
+}
+.small {
+	width: 150px;
+}
+
+.buttons {
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+/**/
