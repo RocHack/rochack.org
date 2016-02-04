@@ -10,7 +10,7 @@ body {
 	text-align: center;
 	color: #616161;
 	font-weight: 400;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -25,7 +25,7 @@ a {
 
 p {
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 17px;
+	font-size: 16px;
 }
 
 h1 {
