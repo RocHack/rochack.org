@@ -29,8 +29,9 @@ p {
 }
 
 h1 {
-	font-size: 38px;
-	font-family: 'Raleway', sans-serif;	
+	font-size: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;	
 }
 
 h1.dandyhacks {
@@ -63,7 +64,7 @@ h2.sponsors {
 
 }
 .page.image {
-	height: 500px;
+	height: 400px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,6 +74,7 @@ h2.sponsors {
 	background: url("../images/bck1.jpg") no-repeat fixed;
 }
 .page.image.second {
+	height: 500px;
 	background: url("../images/bck2.jpg") no-repeat fixed;
 }
 .greetings {
