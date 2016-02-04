@@ -10,7 +10,7 @@ body {
 	text-align: center;
 	color: #616161;
 	font-weight: 400;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -24,8 +24,8 @@ a {
 	}
 
 p {
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 16px;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 17px;
 }
 
 h1 {
