@@ -21,5 +21,5 @@ other, and hack/learn together. Most importantly, we'll also have snacks to
 keep everyone from getting hangry.
 
 We're really excited to get things started on a high note this semester, so
-we'd love for you (and your friends!) to show up and learn **this Thursday (2/11/16) at 8pm in Hylan 301**.
+we'd love for you (and your friends!) to show up and learn/hang out with us **this Thursday (2/11/16) at 8pm in Hylan 301**.
 
