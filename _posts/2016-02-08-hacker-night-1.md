@@ -7,6 +7,7 @@ image: /static/posts/2016-02-08-hacker-night.jpg
 description: Learn how to build a website in 30 minutes
 ---
 ![Hacker Night 1](/static/posts/2016-02-08-hacker-night.jpg)
+
 Hello again everyone!
 
 We're going to be kicking off Hacker Nights this semester with a session on
