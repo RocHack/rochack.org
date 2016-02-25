@@ -3,8 +3,8 @@ layout: post
 author: The RocHack Team
 title: Hacker Night, Ep. 3
 date: 2016-02-25
-image: /static/posts/2016-02-25-iphone.png
-description: Git, GitHub, Yes!
+image: http://rochack.org/static/posts/2016-02-25-iphone.png
+description: iOS, I do confess, thou art the bes(t)
 ---
 ![Hacker Night 3](/static/posts/2016-02-25-iphone.png)
 `NSLog("Hello again RocHack");`
