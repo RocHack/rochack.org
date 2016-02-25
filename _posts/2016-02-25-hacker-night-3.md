@@ -2,7 +2,7 @@
 layout: post
 author: The RocHack Team
 title: Hacker Night, Ep. 3
-date: 2016-02-18
+date: 2016-02-25
 image: /static/posts/2016-02-25-iphone.png
 description: Git, GitHub, Yes!
 ---
