@@ -40,6 +40,13 @@ h1.dandyhacks {
 	margin-bottom: 0px;
 }
 
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	margin-bottom: 25px;
+	margin-top: 2px;
+}
+
 h2 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: light;
