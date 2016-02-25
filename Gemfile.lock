@@ -39,6 +39,3 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-sass
-
-BUNDLED WITH
-   1.11.2
