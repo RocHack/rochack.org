@@ -162,7 +162,7 @@ h2.sponsors {
 
 .logo {
 	margin-top: 40px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 .logo-image {
 	margin-right: 10px;
@@ -170,16 +170,16 @@ h2.sponsors {
 	vertical-align: middle;
 }
 .large {
-	width: 220px;
+	width: 280px;
 }
 .medium {
-	width: 180px;
+	width: 200px;
 }
 .small {
 	width: 150px;
 }
 .smaller {
-	width: 75px;
+	width: 55px;
 }
 
 .buttons {
