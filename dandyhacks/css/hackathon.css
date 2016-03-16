@@ -67,7 +67,9 @@ h2.sponsors {
 }
 
 .page.main {
-	height: 115%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
 }
 .page.image {
 	height: 400px;
@@ -86,11 +88,9 @@ h2.sponsors {
 .greetings {
 	position: relative;
 	width: 50%;
-	top: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	transform: translateY(-50%);
-	webkit-transform: translateY(-50%);
+	margin-bottom: 2em;
 }
 
 .page.about {
