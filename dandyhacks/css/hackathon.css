@@ -246,6 +246,9 @@ h2.sponsors {
 	background-color: #9400FF;
 }
 
+.schedule {
+	height: 100vh;
+}
 
 tr.shrink {
 	color: #999;
