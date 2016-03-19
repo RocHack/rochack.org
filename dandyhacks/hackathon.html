@@ -4,6 +4,8 @@
     <title>RocHack - Spring '16 Hackathon </title>
 
     <link rel="stylesheet" type="text/css" href="css/hackathon.css" />
+    <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hackathon.js"></script>
 
     <!-- For DandyHacks title -->
     <link href='https://fonts.googleapis.com/css?family=Unica+One|Poiret+One|Abel|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
@@ -57,6 +59,198 @@
             </div>
         </div>
 
+
+        <div class="page schedule">
+                <div class="eight columns text-box" id="schedule">
+        <h1>Schedule</h1>
+
+        <div class="filters">
+            <div>Filter by:</div>
+            <a href="#" class="f-all selected">All</a>
+            <a href="#" class="f-important">Important stuff</a>
+            <a href="#" class="f-talk">Talks</a>
+            <a href="#" class="f-food">Food</a>
+            <a href="#" class="f-activity">Activities</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Friday</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="f-important">
+                    <td>5:00pm</td>
+                    <td>Registration + snacks</td>
+                </tr>
+                <tr class="f-important">
+                    <td>6:00pm</td>
+                    <td>Opening ceremony</td>
+                </tr>
+
+                    <tr class="schedule-subitem f-talk">
+                        <td>6:00pm</td>
+                        <td>Welcome talk</td>
+                    </tr>
+                    <tr class="schedule-subitem f-talk">
+                        <td>6:15pm</td>
+                        <td>1010data tech talk</td>
+                    </tr>
+                    <tr class="schedule-subitem f-talk">
+                        <td>6:45pm</td>
+                        <td>Factset tech talk</td>
+                    </tr>
+
+                <tr class="f-important">
+                    <td>7:00pm</td>
+                    <td>Hacking starts</td>
+                </tr>
+                    <tr class="schedule-subitem f-activity">
+                        <td>7:00pm</td>
+                        <td>Team formation</td>
+                    </tr>
+
+                <tr class="f-food">
+                    <td>8:00pm</td>
+                    <td>Dinner</td>
+                </tr>
+
+                <tr class="f-talk">
+                    <td>9:00pm</td>
+                    <td>API Talks</td>
+                </tr>
+
+                    <tr class="schedule-subitem f-talk">
+                        <td>9:00pm</td>
+                        <td>1010data</td>
+                    </tr>
+                    <tr class="schedule-subitem f-talk">
+                        <td>9:15pm</td>
+                        <td>Factset</td>
+                    </tr>
+                    <tr class="schedule-subitem f-talk">
+                        <td>9:25pm</td>
+                        <td>UR Data Science</td>
+                    </tr>
+
+                <tr class="f-activity">
+                    <td>12:00am</td>
+                    <td>Surprise guest performance</td>
+                </tr>
+
+                <tr class="f-activity">
+                    <td>1:00am</td>
+                    <td>Mini game!</td>
+                </tr>
+
+                <tr class="f-food"> 
+                    <td>12:00am</td>
+                    <td>Coffee &amp; snacks</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>??? am</td>
+                    <td>Sleep!</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Saturday</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="f-food">
+                    <td>7:30am</td>
+                    <td>Coffee</td>
+                </tr>
+                <tr class="f-food">
+                    <td>8:00am</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr class="f-talk">
+                    <td>11:00am</td>
+                    <td>UR Robotics workshop on arduinos</td>
+                </tr>
+                <tr class="f-food">
+                    <td>1:00pm</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr class="f-talk">
+                    <td>2:00pm</td>
+                    <td>Engineers Without Borders presentation</td>
+                </tr>
+                <tr class="f-activity">
+                    <td>4:00pm</td>
+                    <td>Yoga</td>
+                </tr>
+                <tr class="f-talk">
+                    <td>5:00pm</td>
+                    <td>Women Society of Engineers</td>
+                </tr>
+                <tr class="f-food">
+                    <td>8:00pm</td>
+                    <td>Dinner</td>
+                </tr>
+                <tr class="f-activity">
+                    <td>11:00pm</td>
+                    <td>Performance</td>
+                </tr>
+                <tr class="f-food">
+                    <td>12:00am - 4:00am</td>
+                    <td>Coffee &amp; snacks</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>?!?#$*!? am</td>
+                    <td>Sleep...</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Sunday</h3></th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr class="f-food">
+                    <td>7:30am</td>
+                    <td>Coffee</td>
+                </tr>
+                <tr class="f-food">
+                    <td>8:00am</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr class="f-important">
+                    <td>9:00am</td>
+                    <td>Hacking ends</td>
+                </tr>
+                <tr class="f-important">
+                    <td>9:30am</td>
+                    <td>Presentations</td>
+                </tr>
+                <tr class="f-important">
+                    <td>10:30am</td>
+                    <td>Judging begins</td>
+                </tr>
+                <tr class="f-important">
+                    <td>11:15am</td>
+                    <td>Closing ceremony</td>
+                </tr>
+                <tr class="f-important">
+                    <td>12:00pm</td>
+                    <td>That's all folks!!</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+        </div>
 
         <div class="page sponsors">
             <div class="contents">
