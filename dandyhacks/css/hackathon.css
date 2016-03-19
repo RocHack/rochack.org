@@ -215,7 +215,7 @@ h2.sponsors {
 	color: #3085CA;
 }
 .f-food {
-	color: #3ACE0C;
+	color: #237C07;
 }
 .f-activity {
 	color: #9400FF;
@@ -240,14 +240,14 @@ h2.sponsors {
 	background-color: #3085CA;
 }
 .f-food.selected {
-	background-color: #3ACE0C;
+	background-color: #237C07;
 }
 .f-activity.selected {
 	background-color: #9400FF;
 }
 
-.schedule {
-	height: 100vh;
+.page.schedule {
+	height: 850px;
 }
 
 tr.shrink {
@@ -261,7 +261,7 @@ tr.colorless {
 
 tr.highlight {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 1.1em;
 }
 
 
@@ -309,10 +309,26 @@ tr:nth-child(2n + 1)
   background: white;
 }
 
+span.e {
+	margin-right: 5px;
+}
+
+span.e {
+	margin-right: 5px;
+}
+
+tr.shrink > td > span.e {
+	margin-right: 0px;
+	display: none;
+}
 
 .schedule-subitem > td:nth-child(2) {
 	font-size: 0.9em;
 }
+.schedule-subitem > td {
+  padding-left: 35px;
+}
+
 .schedule-subitem > td:first-child {
   padding-left: 25px;
 }
