@@ -297,6 +297,10 @@ td {
   padding: 7px 10px;
 }
 
+td:nth-child(2) {
+  width: 100%;
+}
+
 tr:nth-child(2n + 1)
 {
   background: white;
