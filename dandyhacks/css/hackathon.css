@@ -179,7 +179,10 @@ h2.sponsors {
 	width: 150px;
 }
 .smaller {
-	width: 55px;
+	width: 100px;
+}
+.smallest {
+	width: 75px;
 }
 
 .buttons {
