@@ -161,8 +161,8 @@ h2.sponsors {
 }
 
 .logo {
-	margin-top: 40px;
-	margin-bottom: 80px;
+	margin-top: 80px;
+	/*margin-bottom: 80px;*/
 }
 .logo-image {
 	margin-right: 10px;
