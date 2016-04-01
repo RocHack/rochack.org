@@ -64,7 +64,7 @@
             return;
 
         var end = new Date(currentThing.date);
-        var totalSeconds = (end - now)/1000;
+        var totalSeconds = (end - now)/1000 + 1;
 
         var secs = Math.max(Math.floor(totalSeconds % 60), 0);
         var mins = Math.max(Math.floor((totalSeconds/60) % 60), 0);
