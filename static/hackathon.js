@@ -17,7 +17,7 @@
         ["Sat Apr 02 2016 03:00:00 GMT-0400 (EDT)", "insomnia cookies"],
         ["Sat Apr 02 2016 07:30:00 GMT-0400 (EDT)", "coffee"],
         ["Sat Apr 02 2016 08:00:00 GMT-0400 (EDT)", "breakfast"],
-        ["Sat Apr 02 2016 09:00:00 GMT-0400 (EDT)", "yoga"],
+        ["Sat Apr 02 2016 09:30:00 GMT-0400 (EDT)", "yoga"],
         ["Sat Apr 02 2016 11:00:00 GMT-0400 (EDT)", "ur robotics arduino workshop"],
         ["Sat Apr 02 2016 13:00:00 GMT-0400 (EDT)", "lunch"],
         ["Sat Apr 02 2016 14:00:00 GMT-0400 (EDT)", "engineers without borders presentation"],
