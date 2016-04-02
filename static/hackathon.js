@@ -24,6 +24,7 @@
         ["Sat Apr 02 2016 15:00:00 GMT-0400 (EDT)", "scientific programming 2.0 talk"],
         ["Sat Apr 02 2016 15:25:00 GMT-0400 (EDT)", "what is a programming language? talk"],
         ["Sat Apr 02 2016 16:00:00 GMT-0400 (EDT)", "yoga"],
+        ["Sat Apr 02 2016 16:30:00 GMT-0400 (EDT)", "using meteor.js for realtime syncing? talk"],
         ["Sat Apr 02 2016 17:00:00 GMT-0400 (EDT)", "resume workshop & mock interview"],
         ["Sat Apr 02 2016 20:00:00 GMT-0400 (EDT)", "dinner"],
         ["Sat Apr 02 2016 23:00:00 GMT-0400 (EDT)", "juicy connotation mini concert"],
