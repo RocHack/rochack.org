@@ -180,7 +180,15 @@ body {
 
     &.dancing {
         position: absolute;
-        bottom: 30px;
+        width: 590px;
+        height: 400px;
+        bottom: 60px;
+        height: 200px;
+
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     background: rgba(0, 0, 0, .45);
