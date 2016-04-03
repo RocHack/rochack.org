@@ -28,7 +28,7 @@
         ["Sat Apr 02 2016 17:00:00 GMT-0400 (EDT)", "resume workshop & mock interview"],
         ["Sat Apr 02 2016 19:00:00 GMT-0400 (EDT)", "dinner"],
         ["Sat Apr 02 2016 20:30:00 GMT-0400 (EDT)", "mlh no-light competition"],
-        ["Sat Apr 02 2016 22:00:00 GMT-0400 (EDT)", "juicy connotation mini concert"],
+        ["Sat Apr 02 2016 22:00:00 GMT-0400 (EDT)", "JUICY CONNOTATION!!!"],
 
         // sunday
         ["Sun Apr 03 2016 07:30:00 GMT-0400 (EDT)", "coffee"],
