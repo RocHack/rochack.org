@@ -1,5 +1,10 @@
 ---
 ---
+#thing-name
+{
+    color: yellow;
+}
+
 /*
  * Constants
  */
@@ -175,10 +180,14 @@ body {
 
     &.dancing {
         position: absolute;
-        bottom: 30px;
+        width: 590px;
+        height: 400px;
+        bottom: 60px;
+        height: 200px;
 
-        img {
-            width: 200px;
+        iframe {
+            height: 100%;
+            width: 100%;
         }
     }
 
@@ -210,7 +219,7 @@ body {
     height: 80px;
     bottom: 0;
     left: 120px;
-    animation: bounce 3s, move 6s, pulse .5s; // separated by a comma
+    animation: bounce 3s, move 6s, pulse .5s, spin 1.1s;; // separated by a comma
     animation-iteration-count: infinite;
 }
 
@@ -230,4 +239,9 @@ body {
     0% { height: 100px; }
     50% { height: 90px; }
     100% { height: 100px; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
