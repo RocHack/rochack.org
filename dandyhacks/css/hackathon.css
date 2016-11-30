@@ -122,10 +122,6 @@ canvas {
 	/*padding: 10px 0px 0px;*/
 }
 
-.page.sponsors {
-	background: #99CCFF;
-}
-
 .page.faq {
 	height: auto;
 	width: 70%;
@@ -292,6 +288,30 @@ canvas {
 
 .page.schedule {
 	min-height: 900px;
+}
+
+.large-logo {
+	max-width: 250px;
+	max-height: 250px;
+	margin: 15px;
+}
+
+.medium-logo {
+	max-width: 225px;
+	max-height: 225px;
+	margin: 15px;
+}
+
+.small-logo {
+	max-width: 200px;
+	max-height: 200px;
+	margin: 15px;
+}
+
+.smaller-logo {
+	max-width: 175px;
+	max-height: 175px;
+	margin: 15px;
 }
 
 tr.shrink {
