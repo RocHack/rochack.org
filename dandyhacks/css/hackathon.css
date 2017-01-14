@@ -294,20 +294,20 @@ canvas {
 }
 
 .large-logo {
-	max-width: 325px;
-	max-height: 325px;
+	max-width: 350px;
+	max-height: 350px;
 	margin: 15px;
 }
 
 .medium-logo {
-	max-width: 275px;
-	max-height: 275px;
+	max-width: 300px;
+	max-height: 300px;
 	margin: 15px;
 }
 
 .small-logo {
-	max-width: 250px;
-	max-height: 250px;
+	max-width: 225px;
+	max-height: 225px;
 	vertical-align: middle;
 	margin: 15px;
 }
