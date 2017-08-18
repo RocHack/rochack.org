@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RocHack - Spring '17 Hackathon </title>
+    <title>RocHack - Fall '17 Hackathon </title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/hackathon.css" />
     <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
@@ -13,13 +13,16 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans|Raleway|Open+Sans+Condensed:300|Abel|Quicksand' rel='stylesheet' type='text/css'>
 
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=yellow" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/yellow.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a></head>
+  	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=yellow" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/yellow.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 
-<body>
+	<body>
 	<!-- particles.js container -->
 	 <div id="particles-js"></div>
 	 <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-	 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	 <script>
+		 if( !/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))
+			document.write('<script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"><\/script>');
+	 </script>
 	 <script src="js/particleCustom.js"></script>
     <div>
         <div class="page main">
@@ -27,15 +30,16 @@
 			</div>
             <div class="greetings">
                 <img class="logoPic" src="images/logo.png" />
-                <h1 class="dandyhacks">DandyHacks '17 </h1>
+                <h1 class="dandyhacks">DandyHacks </h1>
                 <h3> CS | Data Science <h3>
-                <h2> February 17-19, 2017 @ University of Rochester </h2>
+                <h2> November 10-12, 2017 @ University of Rochester </h2>
                 <h3> Location: <a href="https://www.google.com/maps/place/Douglass+Dining+Hall/@43.1260354,-77.6313831,16z/data=!4m8!1m2!2m1!1sdouglass+dining+hall!3m4!1s0x89d6b4c7c3323eaf:0x879fc3fd468decdd!8m2!3d43.128986!4d-77.6290392">Douglass Ballroom (2nd Floor)</a> </h3>
                 <div>
                     <!-- a id="register" class="register buttons" href="http://dandyhacks2017.devpost.com/" target="_blank">Submit projects here!</a-->
                     <!-- <a id="register" class="register buttons" href="volunteer.html" target="_blank">Volunteer !</a> -->
 			              <!-- a id="register" class="register buttons" href="https://docs.google.com/forms/d/e/1FAIpQLSfv7eT_341DNWRp30J1VLftzXP6WOG3u3z0zirYftt9g7Rdog/viewform" target="_blank">Register</a-->
-                    <div id="register" class="register buttons" target="_blank" sty style="color:black; background:#a0a0a0">Registration Has Ended</div>
+                    <!--div id="register" class="register buttons" target="_blank" sty style="color:black; background:#a0a0a0">Registration Has Ended</div-->
+					<div id="register" class="register buttons" target="_blank" sty style="color:black; background:#a0a0a0">Registration Will Start Soon</div>
 
                 </div>
             </div>
@@ -54,11 +58,10 @@
                 <div class="container-about">
                     <h1> Can I attend? </h1>
                     <p> This event is open to all students at all schools! </p>
-                    <p> However, you must be at least 18 years of age to attend.</p>
                 </div>
                 <div class="container-about">
                     <h1> When and where? </h1>
-                    <p> February 17th to February 19th, <!--a href="https://www.google.com/maps/place/Rettner+Hall,+500+Wilson+Blvd,+Rochester,+NY+14627/@43.1285502,-77.632249,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89d6b4c7e5dc3a6d:0xde5eaedae1b0ea81!2sWilson+Commons,+Rochester,+NY+14611!3b1!3m1!1s0x89d6b4c7fd404615:0xc99f79bddbb79162" target="_blank"> Rettner Hall</a> (the new building right next to Wilson Commons)--> at the University of Rochester. </p>
+                    <p> November 10th to November 12th, <!--a href="https://www.google.com/maps/place/Rettner+Hall,+500+Wilson+Blvd,+Rochester,+NY+14627/@43.1285502,-77.632249,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89d6b4c7e5dc3a6d:0xde5eaedae1b0ea81!2sWilson+Commons,+Rochester,+NY+14611!3b1!3m1!1s0x89d6b4c7fd404615:0xc99f79bddbb79162" target="_blank"> Rettner Hall</a> (the new building right next to Wilson Commons)--> at the University of Rochester. </p>
                     <p> If you're coming from a different school and need help with parking, getting here, or anything else, email us. We're more than happy to help with anything! </p>
                 </div>
                 <div class="container-about">
@@ -69,7 +72,7 @@
         </div>
 
 
-        <div class="page schedule">
+        <!--div class="page schedule">
         <h1>Schedule</h1>
 
         <div class="filters">
@@ -259,7 +262,7 @@
             </tbody>
         </table>
 
-        </div>
+        </div-->
 
 
 
@@ -293,7 +296,7 @@
 
                         <div class="faq-question">
                             <h3>Are there any rules?</h3>
-                            <p> Yes! You must be 18 years of age. We also follow the <a href ="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"> MLH code of conduct</a>. Before signing up we will ask you to agree to it to be able to participate.</p>
+                            <p> Yes! We follow the <a href ="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"> MLH code of conduct</a>. Before signing up we will ask you to agree to it to be able to participate.</p>
                         </div>
                     </div>
 
@@ -325,7 +328,7 @@
 		<div class="page sponsors">
 			<div class="contents">
 				<div class="container-sponsors">
-					<h1> A Huge Thanks to our Sponsors! </h1>
+					<!--h1> A Huge Thanks to our Sponsors! </h1>
 					<div id="medium logos">
 						<img src="images/sponsors/medium/1010dataLogo.png" class="medium-logo" style="max-width: 350px;"/>
 					</div>
@@ -345,7 +348,7 @@
             <img src="images/sponsors/smaller/insomniaLogo.png" class="smaller-logo" style="max-width: 150px;"/>
 						<img src="images/sponsors/smaller/freshPrintsLogo.svg" class="smaller-logo" />
             <img src="images/sponsors/smaller/soylent_logo.svg" class="smaller-logo" />
-					</div>
+					</div-->
 					<p> Interested in sponsoring? Check out our <a href="sponsorship.pdf" target="_blank">sponsorship sheet</a>! </p>
 				</div>
 			</div>
