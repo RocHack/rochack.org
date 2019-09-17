@@ -198,6 +198,9 @@ canvas {
 	margin-left: 10px;
 	vertical-align: middle;
 }
+.largest {
+	width: 800px;
+}
 .large {
 	width: 290px;
 }
