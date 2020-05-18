@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DandyHacks Fall '19 Hackathon </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/hackathon.css" />
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"
+        integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hackathon.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- For DandyHacks title -->
+    <link href='https://fonts.googleapis.com/css?family=Unica+One|Poiret+One|Abel|Open+Sans+Condensed:300'
+        rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans|Raleway|Open+Sans+Condensed:300|Abel|Quicksand'
+        rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <a id="mlh-trust-badge"
+        style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+        href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=blue"
+        target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-blue.svg"
+            alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+
+
+
+<body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script>
+        if (!/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))
+            document.write('<script type="text/javascript" src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"><\/script>');
+    </script>
+    <script src="js/particleCustom.js"></script>
+    <div>
+        <div class="page main">
+            <div class="coverPic">
+            </div>
+            <div class="greetings">
+                <img class="logoPic" src="images/logo2019.png" />
+                <div>
+                    <h2>Join our slack:</h2>
+                    <a href="https://join.slack.com/t/dandyhacks-2019/shared_invite/enQtNzk4MzIyMTcwMzU1LTEzNjZlMzE5YmVmZWRkZmM3OGI3NjMzN2I2MjgzNGQ0NTgwZmU4M2I5YWNlYWI0ZmNmMzgzZmUwMDQ4ZTczYzY">
+                        <img class="logo-image large" src="images/slack.png">
+                    </a>
+                </div>
+                
+                <!-- <h1 class="dandyhacks">DandyHacks </h1> -->
+                <!-- <h3> CS | Data Science <h3> -->
+
+                        <!-- <h2>Compiling...</h2> -->
+
+                        <h2> October 25th-27th, 2019 @ University of Rochester </h2>
+                        <!-- <h3> <a href="#schedule">Go to schedule</a> </h3> -->
+                        <h2><a style="font-weight:bold;" href="https://dandyhacks.typeform.com/to/P4Zgqm"> Registration
+                                Form </a> </h2>
+                        <h3> Location: <a
+                                href="https://www.google.com/maps/place/Douglass+Dining+Hall/@43.1260354,-77.6313831,16z/data=!4m8!1m2!2m1!1sdouglass+dining+hall!3m4!1s0x89d6b4c7c3323eaf:0x879fc3fd468decdd!8m2!3d43.128986!4d-77.6290392">Douglass
+                                Ballroom (2nd Floor)</a> </h3>
+                        <span>
+                            <a href="https://www.facebook.com/dandyhacks/" class="fa fa-facebook fa-3x" style="color:#003B71"></a>
+                            <a href="https://www.instagram.com/uofrdandyhacks/" class="fa fa-instagram fa-3x" style="color:#003B71"></a>
+                            <a href="https://twitter.com/dandyhacks" class="fa fa-twitter fa-3x" style="color:#003B71"></a><!--Rochester Blue-->
+
+                        </span>
+                        
+
+                        <div>
+                            <!-- a id="register" class="register buttons" href="http://dandyhacks2017.devpost.com/" target="_blank">Submit projects here!</a-->
+                            <!-- <a id="register" class="register buttons" href="volunteer.html" target="_blank">Volunteer !</a> -->
+                            <!--
+			<a id="register" class="register buttons" href="https://goo.gl/forms/hjrAOqWVa5UVGhbi2" target="_blank">Register</a>
+			-->
+                            <!--a id="register" class="register buttons" href="https://goo.gl/forms/RwGkbY7ARJrUgOuD3" target="_blank">Volunteer</a-->
+                            <!--div id="register" class="register buttons" target="_blank" sty style="color:black; background:#a0a0a0">Registration Has Ended</div-->
+
+                            <!--a id="register" class="register buttons" href="https://join.slack.com/t/dandyhacks2018/shared_invite/enQtMzE2NzkzNDQ3MjIxLTIxMDY3M2UwN2U0ZjM0MjNjNjRiNjYwZjljMGUyMTFjNTcxYTg1NWJiZjNkZDgxYmY2NDdjNGRlYjU3MDVkYzc" target="_blank">Join Slack</a-->
+                            <!--div id="register" class="register buttons" target="_blank" sty style="color:black; background:#a0a0a0">Registration Will Start Soon</div-->
+                        </div>
+            </div>
+        </div>
+        <div class="page image first"></div>
+
+        <div class="page about">
+            <div class="contents">
+                <div class="container-about">
+                    <h1> A hacka-what? </h1>
+                    <p>University of Rochester's fourth 36 hour hackathon!</p>
+                    <p> Hackathon! It's an event about building the coolest thing you can in 36 hours and meeting
+                        awesome people. This year we decided to try something new and combine CS and Data Science
+                        hackathon together! We don't place any restrictions on the kind of projects you can build. They
+                        can be software projects but we'd love to see hardware, or whatever else people come up with as
+                        well. It just has to be built within the 36 hours. </p>
+
+                    <p> At the end of the 36 hours we have judges get together and determine the coolest hacks. Winners
+                        get awesome prizes! </p>
+                </div>
+                <div class="container-about">
+                    <h1> Can I attend? </h1>
+                    <p> This event is open to all students at all schools! </p>
+                </div>
+                <!--
+                <div class="container-about">
+                    <h1> When and where? </h1>
+                    <p> October 26th to October 28th, <!--a href="https://www.google.com/maps/place/Rettner+Hall,+500+Wilson+Blvd,+Rochester,+NY+14627/@43.1285502,-77.632249,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x89d6b4c7e5dc3a6d:0xde5eaedae1b0ea81!2sWilson+Commons,+Rochester,+NY+14611!3b1!3m1!1s0x89d6b4c7fd404615:0xc99f79bddbb79162" target="_blank"> Rettner Hall</a> (the new building right next to Wilson Commons) at the University of Rochester. </p>
+                    <p> If you're coming from a different school and need help with parking, getting here, or anything else, email us. We're more than happy to help with anything! </p>        
+                </div>
+                -->
+                <!--
+                <div class="container-about">
+                    <h1> Do you have Slack? </h1>
+                    <p> Yes we do! Find us @ dandyhacks-18.slack.com! The invitation link is <a href="https://join.slack.com/t/dandyhacks-2018/shared_invite/enQtNDY0MzM2ODc1OTI0LTUyZjBhMWRjZGJmZmMyZTNhZDBiMjliOTBiNDUwMjUwOTg0YWMyY2MwZTVjODk5NmYzNTQ2Nzc3MGEyNjE1MmY">here</a>, or via the QR Code below: </p><img src="images/slackQR.png" style="max-width: 350px;"/>
+                </div>
+                -->
+                <div class="container-about">
+
+                    <h1> Sponsorship </h1>
+                    <p> Interested in sponsoring? Check out our <a href="SponsorshipLetter.pdf"
+                            target="_blank">sponsorship sheet</a>! </p>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page schedule" id="schedule">
+            <h1>Schedule</h1>
+
+            <div class="filters">
+                <div class="filter-by">Filter by:</div>
+                <a href="#" class="f-all selected">All</a>
+                <a href="#" class="f-important">Important stuff</a>
+                <a href="#" class="f-talk">Talks</a>
+                <a href="#" class="f-food">Food</a>
+                <a href="#" class="f-activity">Activities</a>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="day">
+                            <h3>Friday</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="f-important">
+                        <td>7:00pm</td>
+                        <td><span class="e">🛂</span> Check-in</td>
+                    </tr>
+                    <tr class="f-important">
+                        <td>8:00pm</td>
+                        <td><span class="e">🎊</span> Opening ceremony </td>
+                    </tr>
+                    <tr class="f-important">
+                        <td>8:45pm</td>
+                        <td><span class="e">🎊</span> Team formation</td>
+                    </tr>
+
+                    <tr class="f-important">
+                        <td>9:00pm</td>
+                        <td><span class="e">💻</span> Hacking starts</td>
+                    </tr>
+
+                    <tr class="f-talk">
+                        <td>9:00pm</td>
+                        <td><span class="e">📈</span> Intro to Python Workshop</td>
+                    </tr>
+
+                    <tr class="f-food">
+                        <td>12:00am</td>
+                        <td><span class="e">🍪</span>️ Insomnia cookies!</td>
+                    </tr>
+
+                    <tr class="f-important">
+                        <td>??? am</td>
+                        <td><span class="e">😴</span> Sleep!</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="day">
+                            <h3>Saturday</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="f-food">
+                        <td>9:00am</td>
+                        <td><span class="e">🍳</span> Breakfast</td>
+                    </tr>
+                    <tr class="f-important">
+                        <td>9:00am</td>
+                        <td><span class="e">🏁</span> M&T Bank: on-campus Interviews start @ Douglass 308</td>
+                    </tr>
+                    <tr class="f-talk">
+                        <td>9:15am</td>
+                        <td><span class="e">🏁</span> M&T Bank: Zelle Demo @ Douglass 302</td>
+                    </tr>
+                    <tr class="f-talk">
+                        <td>11:30am</td>
+                        <td><span class="e">🏁</span> M&T Bank: Tech Talk @ iZone Forum</td>
+                    </tr>
+                    <tr class="f-food">
+                        <td>12:00pm</td>
+                        <td><span class="e">🍴</span> Lunch</td>
+                    </tr>
+                    <tr class="f-talk">
+                        <td>1:00pm</td>
+                        <td><span class="e">📈</span> Technical Interview Workshop @ Douglass 302</td>
+                    </tr>
+
+
+
+
+
+                    <tr class="f-activity">
+                        <td>1:00pm</td>
+                        <td><span class="e">🙆</span> Cup Stacking</td>
+                    </tr>
+                    <tr class="f-talk">
+                        <td>3:00pm</td>
+                        <td><span class="e">📈</span> Interview Workshop w/ Career Center @ Gleason Theater</td>
+                    </tr>
+
+
+                    <tr class="f-talk">
+                        <td>4:30pm</td>
+                        <td><span class="e">📈</span> Intro to Git by CIF @ Gleason Theater</td>
+                    </tr>
+                    <tr class="f-important">
+                        <td>5:00pm</td>
+                        <td><span class="e">🏁</span> M&T Bank: on-campus Interviews End</td>
+                    </tr>
+                    <tr class="f-activity">
+                        <td>5:00pm</td>
+                        <td><span class="e">🏁</span> M&T Bank: Cube Challenge and Awake Chocolate</td>
+                    </tr>
+                    <tr class="f-food">
+                        <td>6:00pm</td>
+                        <td><span class="e">🍝</span> Dinner</td>
+                    </tr>
+                    <tr class="f-activity">
+                        <td>7:30pm</td>
+                        <td><span class="e">🙆</span> MLH Mini Event: Warewolf @ Douglass 401</td>
+                    </tr>
+                    <tr class="f-talk">
+                        <td>9:00pm</td>
+                        <td><span class="e">📈</span> Intro to C# with Unity @ Douglass 401</td>
+                    </tr>
+                    <tr class="f-activity">
+                        <td>10:30pm</td>
+                        <td><span class="e">📈</span> Midnight Ramblers Performance</td>
+                    </tr>
+
+
+
+
+
+                    <tr class="f-food">
+                        <td>12:00am</td>
+                        <td><span class="e">🥤</span> Tai Chi Bubble Tea</td>
+                    </tr>
+
+                    <tr class="f-important">
+                        <td>!?!? am</td>
+                        <td><span class="e">👻</span> Sleep...!</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="day">
+                            <h3>Sunday</h3>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="f-food">
+                        <td>9:00am</td>
+                        <td><span class="e">🌞</span> Breakfast</td>
+                    </tr>
+
+
+
+                    <tr class="f-important">
+                        <td>11:00am</td>
+                        <td><span class="e">🌟</span> Submission</td>
+                    </tr>
+
+                    <tr class="f-important">
+                        <td>11:20am</td>
+                        <td><span class="e">📲</span> Presentations </td>
+                    </tr>
+                    <tr class="f-food">
+                        <td>12:00pm</td>
+                        <td><span class="e">🍴</span> Lunch</td>
+                    </tr>
+
+
+                    <tr class="f-important">
+                        <td>2:00pm</td>
+                        <td><span class="e">⚖️ </span> Judging</td>
+                    </tr>
+
+                    <tr class="f-important">
+                        <td>2:30pm</td>
+                        <td><span class="e">🏆</span> Closing ceremony</td>
+                    </tr>
+                    <tr class="f-important">
+                        <td>3:00pm</td>
+                        <td><span class="e">😢</span> That's all folks!!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!--
+	<div class="page schedule" id="schedule">
+        <h1>Schedule</h1>
+
+        <div class="filters">
+            <div class="filter-by">Filter by:</div>
+            <a href="#" class="f-all selected">All</a>
+            <a href="#" class="f-important">Important stuff</a>
+            <a href="#" class="f-talk">Talks</a>
+            <a href="#" class="f-food">Food</a>
+            <a href="#" class="f-activity">Activities</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Friday</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="f-important">
+                    <td>7:00pm</td>
+                    <td><span class="e">🛂</span> Registration</td>
+                </tr>
+                <tr class="f-important">
+                    <td>8:00pm</td>
+                    <td><span class="e">🎊</span> Opening ceremony</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>8:30pm</td>
+                    <td><span class="e">🙏</span> Team formation</td>
+                </tr>
+
+                 <tr class="f-important">
+                    <td>9:00pm</td>
+                    <td><span class="e">💻</span> Hacking starts</td>
+                </tr>
+
+
+                <tr class="f-talk">
+                    <td>10:00pm</td>
+                    <td><span class="e">📈</span> Intro to programming workshops</td>
+                </tr>
+
+                <tr class="f-food">
+                    <td>12:00am</td>
+                    <td><span class="e">🍪</span>️ Insomnia cookies!</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>??? am</td>
+                    <td><span class="e">😴</span> Sleep!</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Saturday</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="f-food">
+                    <td>9:00am</td>
+                    <td><span class="e">🍳</span> Breakfast</td>
+                </tr>
+                <tr class="f-talk">
+                    <td>11:00am</td>
+                    <td><span class="e">📈</span> Workshop by WiC on "How to present your Hackathon Project" </td>
+                </tr>
+                <tr class="f-food">
+                    <td>12:30pm</td>
+                    <td><span class="e">🍴</span> Lunch sponsored by Deli Sandros
+                    </td>
+                </tr>
+                 <tr class="f-talk">
+                    <td>1:30pm</td>
+                    <td><span class="e">📈</span>1010data Tech Talk</td>
+                </tr>
+
+                <tr class="f-activity">
+                    <td>2:30pm</td>
+                    <td><span class="e">🙆</span> Google Swag distribution</td>
+                </tr>
+
+                <tr class="f-talk">
+                    <td>3:00pm</td>
+                    <td><span class="e">📈</span> FactSet workshop</td>
+                </tr>
+
+                <tr class="f-talk">
+                    <td>4:30pm</td>
+                    <td><span class="e">📈</span>1010data Workshop</td>
+                </tr>
+
+                <tr class="f-food">
+                    <td>6:00pm</td>
+                    <td><span class="e">🍝</span> Dinner sponsored by Tandoor of India</td>
+                </tr>
+                <tr class="f-activity">
+                    <td>7:00pm</td>
+                    <td><span class="e">🌟</span> Taking a fun break (Conducted by WiC)</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>8:00pm</td>
+                    <td><span class="e">🌟</span> Draft HackerEarth Submissions Due</td>
+                </tr>
+
+                <tr class="f-food">
+                    <td>12:00am</td>
+                    <td><span class="e">☕</span> Tai Chi Bubble Tea</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>!?!? am</td>
+                    <td><span class="e">👻</span> Sleep...!</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" class="day"><h3>Sunday</h3></th>
+                </tr>
+            </thead>
+
+            <tbody>
+				<tr class="f-important">
+                    <td>9:00am</td>
+                    <td><span class="e">🏁</span> Hacking ends</td>
+                </tr>
+                <tr class="f-food">
+                    <td>9:30am</td>
+                    <td><span class="e">🌞</span> Breakfast sponsored by Cam's Pizzeria</td>
+                </tr>
+                <tr class="f-activity">
+                    <td>10:00am</td>
+                    <td><span class="e">🌟</span> Shirts &amp; swag</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>10:30am</td>
+                    <td><span class="e">📲</span> Presentations &amp; Judging</td>
+                </tr>
+		    
+                <tr class="f-food">
+                    <td>12:00pm</td>
+                    <td><span class="e">🍴</span> Lunch sponsored by Cam's Pizzeria</td>
+                </tr>
+
+                <tr class="f-important">
+                    <td>1:00pm</td>
+                    <td><span class="e">🏆</span> Closing ceremony</td>
+                </tr>
+                <tr class="f-important">
+                    <td>2:00pm</td>
+                    <td><span class="e">😢</span> That's all folks!!</td>
+                </tr>
+            </tbody>
+        </table>
+		-->
+
+
+        <div class="page image second"></div>
+
+        <div class="page faq">
+            <div class="contents">
+                <div class="container-faq">
+                    <h1> FAQ </h1>
+                    <div class="container">
+                        <div class="faq-question">
+                            <h3>Do I bring anything?</h3>
+                            <p>Yep! Bring a laptop and anything else you need to get you into the coding zone. If you're
+                                from out of town and want to sleep make sure you bring a comfy sleeping bag!</p>
+                            <p>If you're interested in a hardware hack, bring along some equipment but <b class="hax">we
+                                    will have plenty of toys for you to use in your project</b> if you need anything!
+                            </p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>Do I have to pay to attend?</h3>
+                            <p>No! The hackathon is completely free to all students who want to attend. The only thing
+                                you may have to cover is transportation (if you're coming from other places and because
+                                we can't guarantee to cover all requests) and some food (although there will be plenty
+                                of free food for you already!).</p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>How big can the team be?</h3>
+                            <p>The minimum size of the team is 1 and the maximum is 4! If you don't have a team - we
+                                will help you find one once you get here!</p>
+                        </div>
+
+                        <!--div class="faq-question">
+                            <h3>How do I get to you?</h3>
+                            <p>Unfortunately this year we are not sending buses, however, we will be able to reimberse you for gas/other transprtation! All attendies should have received a link to the reimbersement form. Please present all of your travel receipts during registration when you get here, or else we will not be able to pay you back!</p>
+                        </div-->
+
+                        <div class="faq-question">
+                            <h3>Are you giving travel reimbursements?</h3>
+                            <p>Unfortunately we do not have the resources to provide travel reimbursements this year.
+                            </p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>Are there any rules?</h3>
+                            <p> Yes! We follow the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                                    target="_blank"> MLH code of conduct</a>. Before signing up we will ask you to agree
+                                to it to be able to participate.</p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="faq-question">
+                            <h3>Will there be food?</h3>
+                            <p>Yes! We plan to provide more than enough food for everyone.</p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>What if I don't have an idea?</h3>
+                            <p>Come anyways! We can help you find a team that already has an idea or we'll have a list
+                                of ideas from departments across campus that you can browse through. Regardless, we'll
+                                figure something awesome out for you!</p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>What if I have a cool idea but don't know how to code?</h3>
+                            <p>If you're interested in learning how to program, you should totally come. Hackathons are
+                                a great way to get started with building your awesome idea for yourself!</p>
+                        </div>
+
+                        <div class="faq-question">
+                            <h3>Any other questions?</h3>
+                            <p>Get in touch! You can contact us at <a
+                                    href="mailto:greetings@dandyhacks.net">greetings@dandyhacks.net</a> and we'll get
+                                back to you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page sponsors">
+            <div class="contents">
+                <div class="container-sponsors">
+                    <a href="https://www.mtb.com/home-page">
+                        <img class="logo-image largest" src="images/MT.png">
+                    </a>
+                    <div>
+                        <a href="https://www.factset.com/">
+                            <img class="logo-image medium" src="images/factset.jfif">
+                        </a>
+                        <img class="logo-image medium" src="images/GIDS.png">
+                        <a href="http://www.sas.rochester.edu/dsc/consortium/index.html">
+                            <img class="logo-image medium" src="images/RDSC.jpg">
+                        </a>
+
+                        <img class="logo-image smaller" src="images/Revolution.png">
+                        <a href="https://unity.com/">
+                            <img class="logo-image medium" src="images/unity.png">
+                        </a>
+
+                        <img class="logo-image smaller" src="images/insomnia.png">
+                        <img class="logo-image medium" src="images/brandmakers.png">
+
+
+
+                    </div>
+
+                    <!--<p> Error 404: Sponsors not found! </p>
+				<h1> We are looking for sponsors! </h1> 
+-->
+                    <p> Our last hackathon saw around 250 talented students from many different universities. We will
+                        provide a spacious venue and tables for your company to showcase swag (students love it!). You
+                        will have an opportunity to give a talk, lead a workshop, and recruit directly from the most
+                        talented engineering students.</p>
+
+                    <p> Interested? Check out our <a href="SponsorshipLetter.pdf" target="_blank">sponsorship sheet</a>!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!--
+		<div class="page sponsors">
+			<div class="contents">
+				<div class="container-sponsors">
+					<h1> A Huge Thanks to our Sponsors! </h1>
+					<div id="medium logos">
+						<img src="images/sponsors/medium/1010dataLogo.png" class="medium-logo" style="max-width: 350px;"/>
+						<img src="images/sponsors/medium/factSetLogo.png" class="medium-logo" />
+					</div>
+					<div id="small logos">
+						<img src="images/sponsors/small/dataScienceLogo.png" class="small-logo" style="max-width: 270px;"/>
+						<img src="images/sponsors/small/csLogo.png" class="small-logo" style="max-width: 270px;"/>
+                        <img src="images/sponsors/smaller/unitylogo.png" class="small-logo" style="max-width: 200px;"/>
+					</div>
+					<br>
+					<div id="smaller logos">
+						<img src="images/sponsors/smaller/brandmakersLogo.png" class="smaller-logo" style="max-width: 230px;"/>
+						<img src="images/sponsors/smaller/careerCenterLogo.png" class="smaller-logo" style="max-width: 230px;"/>
+						<img src="images/sponsors/smaller/googleLogo.png" class="smaller-logo" style=/>
+						<img src="images/sponsors/smaller/hackerearth.png" class="smaller-logo" style="max-width: 200px;"/>
+						<img src="images/sponsors/smaller/brandNetworks.png" class="smaller-logo" />
+					</div>
+					<div id="food logos">
+						<img src="images/sponsors/smaller/taichi.png" class="smaller-logo" style="max-width: 120px;"/>
+						<img src="images/sponsors/smaller/delisandros.png" class="smaller-logo" style="max-width: 200px;"  text-align:center 
+						height=50px/>
+						<img src="images/sponsors/smaller/cams.png" class="smaller-logo" style="max-width: 100px;"/>
+						<img src="images/sponsors/smaller/wegmansLogo.png" class="smaller-logo" style="max-width: 100px;"/>
+						<img src="images/sponsors/smaller/insomniaLogo.png" class="smaller-logo" style="max-width: 100px;"/>
+					</div>	
+					<p> Interested in sponsoring? Check out our <a href="newsponsorship2018.pdf" target="_blank">sponsorship sheet</a>! </p>
+				</div>
+			</div>
+		</div>
+		-->
+    </div>
+
+    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
+
+</body>
+
+</html>
